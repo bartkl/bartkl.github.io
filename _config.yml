@@ -1,2 +1,4 @@
 theme: jekyll-theme-tactile
 highlighter: pygments
+kramdown:
+  syntax_highlighter: pygments
