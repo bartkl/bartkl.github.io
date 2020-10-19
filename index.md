@@ -41,6 +41,10 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ```robot-framework
 *** Settings ***
 Library  SeleniumLibrary
+
+*** Test Cases ***
+Test Me
+    Log  Hello
 ```
 
 ```python
