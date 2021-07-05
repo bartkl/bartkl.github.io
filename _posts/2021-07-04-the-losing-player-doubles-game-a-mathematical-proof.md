@@ -74,7 +74,7 @@ A nice way to visually represent the possible rounds in games that (eventually) 
 
 Firstly, what really matters in these games is not the actual amounts of points the players have, or even the absolute total. What matters are the ratios of point distribution among players. For example, whether both players have \\(100\\) points or just \\(1\\) is irrelevant. In both cases there's a \\(1:1\\) ratio, which is what matters.
 
-Looking at it this way, we can normalize all possible ratios such that all common divisors are factored out, leaving a single representative pair. The pair \\(1, 3\\) will represent the ratios \\(1:3\\), \\(20:60\\), and so on.
+Looking at it this way, we can normalize all possible ratios such that all common divisors are factored out, leaving a single representative pair. The pair \\(\\(1, 3\\)\\) will represent the ratios \\(1:3\\), \\(20:60\\), and so on.
 
 So, any round can now be represented by a single pair of numbers. It's time to build our tree.
 
