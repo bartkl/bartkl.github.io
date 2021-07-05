@@ -169,9 +169,9 @@ Since these are now coprime-normalized, we have established that \\((p'', q'')\\
 
 Let's add those numbers up:
 
-\\[p'' + q'' = p + \frac{q - p}{2}\\]
-\\[2(p'' + q'') = 2p + q - p\\]
-\\[2(p'' + q'') = p + q\\]
+$$p'' + q'' = p + \frac{q - p}{2}$$
+$$2(p'' + q'') = 2p + q - p$$
+$$2(p'' + q'') = p + q$$
 
 By the induction assumption, we know that \\(p'' + q'' = 2^{n + 1}\\), so:
 
