@@ -157,40 +157,29 @@ Now, assume the hypothesis holds for all \\(n\\). We will now show that then, it
 
 Let \\((p, q)\\) be an arbitrary node from row \\(n + 1\\). Without loss of generality, we can assume \\(p < q\\). Let's apply the rules to advance the game:
 
-$$\begin{equation}
-p' = 2p
-q' = q - p
-\end{equation}$$
+\\[p' = 2p\\]
+\\[q' = q - p\\]
 
 Giving us the ratio \\(p':q'\\) in the next round (row \\(n\\)). Now note that since \\(p, q\\) are coprime, they are odd, and therefore \\(p', q'\\) are even. So we can safely divide these rational parts by \\(2\\):
 
-\\[
-    p'' = p
-    q'' = \frac{q - p}{2}
-
-\\]
+\\[p'' = p\\]
+\\[q'' = \frac{q - p}{2}\\]
 
 Since these are now coprime-normalized, we have established that \\((p'', q'')\\) is a node in row \\(n\\).
 
 Let's add those numbers up:
 
-\\[
-    p'' + q'' = p + \frac{q - p}{2}
-    2(p'' + q'') = 2p + q - p
-    2(p'' + q'') = p + q
-\]]
+\\[p'' + q'' = p + \frac{q - p}{2}\\]
+\\[2(p'' + q'') = 2p + q - p\\[
+\\[2(p'' + q'') = p + q\]]
 
 By the induction assumption, we know that \\(p'' + q'' = 2^{n + 1}\\), so:
 
-\\[
-    2(p'' + q'') = p + q
-    2 \cdot 2^{n + 1} = p + q
-    2^{n + 2} = p + q
-\\]
+\\[2(p'' + q'') = p + q\\]
+\\[2 \cdot 2^{n + 1} = p + q\\]
+\\[2^{n + 2} = p + q\\]
 
 Recall that \\((p, q)\\) was chosen as a node on row \\(n + 1\\), so we have successfully demonstrated that the condition is satisfied for \\(n + 1\\). It follows then from this proof by mathematical induction that this part of the proposition is true.
-
-
 
 
 # Critical notes
