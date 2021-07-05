@@ -74,7 +74,7 @@ A nice way to visually represent the possible rounds in games that (eventually) 
 
 Firstly, what really matters in these games is not the actual amounts of points the players have, or even the absolute total. What matters are the ratios of point distribution among players. For example, whether both players have \\(100\\) points or just \\(1\\) is irrelevant. In both cases there's a \\(1:1\\) ratio, which is what matters.
 
-Looking at it this way, we can normalize all possible ratios such that all common divisors are factored out, leaving a single representative pair. The pair \\((1, 3)\\) will represent the ratios \\(1:3\\), \\(20:60\\), and so on.
+Looking at it this way, we can normalize all possible ratios such that all common divisors are factored out, leaving a single representative pair. The pair \\((1, 3)\\) will represent the ratios \\(1:3\\), \\(20:60\\), and so on. From now on, I will refer to this as _coprime normalization_.
 
 So, any round can now be represented by a single pair of numbers which are coprime (i.e. don't share any divisors). It's time to build our tree.
 
@@ -86,7 +86,7 @@ Here's part of the beginning of the tree:
 
 Some observations and conventions:
 
-- The tree is mirrored over the y axis, and we can consider only one half without losing any generality, since it's irrelevant for our purposes whether Alice has \\(100\\) points and Bob has \\(200\\), or vice versa.
+- The tree is mirrored over the y axis, and we can consider only one half without losing any generality, since it's irrelevant for our purposes whether Alice has (for example) \\(100\\) points and Bob has \\(200\\), or vice versa.
 - The rows are numbered, starting with row \\(0\\). This will come in handy later.
 - For any node \\((x, y)\\) we will say that the \\(x\\) parts belong to player \\(1\\), and the other \\(y\\) parts to player \\(2\\).
 - Since we're backtracking, row \\(n + 1\\) is the turn _before_ row \\(n\\).
@@ -95,3 +95,49 @@ It might not be immediately obvious how to derive the pairs in the tree. Let's d
 
 1. Player \\(1\\) doubled his points in the last round, in which case they used to have \\(1\\) part, meaning player \\(2\\) must have lost one part, meaning they had \\(7\\) parts. So, this corresponds to the node \\((1, 7)\\). Note that these numbers are coprime, and don't need further normalization.
 2. Player \\(2\\) doubled his points, so they had \\(3\\) parts, and player \\(1\\) must have had \\(5\\) parts. This corresponds with the node \\((5, 3)\\).
+
+Now that we have a neat visualization, it's time to get to solving the puzzle.
+
+# The solution
+The binary tree we just built enables us to solve the problem quite easily.
+
+First, the root node \\((1, 1)\\) represents (and is the only node doing so) an ending game. A game ends, if and only if, the points ratio corresponds to this node.
+
+Then, note that we generated _all_ possible preceding ratios between the players' points, and can do so recursively as many times as we like. This means that by definition, this tree covers the entire set of (coprime normalized) ratios (and nothing else). Put differently:
+
+> If the players have points with a ratio corresponding to some node in this tree, the game will ultimately end. Reversely, if the ratio does not correspond to any node on the tree, the game will not end.
+
+Okay, that's nice, but: given some point counts for both players, how can I tell whether the ratio corresponds with a node on the tree?
+
+## The pattern
+To answer that question, it would be sufficient identify some property that holds for every node in the tree. And we're in luck, because it's not very hard to see:
+
+> Given some row \\(n\\) of the tree, it holds that for every node \\((x, y)\\) in that row, we have \\(x + y = 2^{n + 1}\\).
+
+This makes sense, because row \\(0\\) clearly has a sum of \\(2\\), and since the coprime normalization we apply requires us to multiply by \\(2\\) every row we advance (see the example calculation earlier, with the \\(2:6\\) ratio), this sum gets multipied by \\(2\\) for the next row.
+
+So, how does this help us? Well, that depends. It seems clear that if a node is in this tree, its parts add up to \\(2^{n}\\), where \\(n\\) is the row number. However, the reverse is not necessarily true, i.e.: if we have coprime \\(x, y\\) such that \\(x + y = 2^{n}\\) for some \\(n\\), we don't know if this means \\((x, y)\\) is a node in the tree (on row \\(n\\) for that matter). Note that if this turns out to be the case, we have what we are looking for, since in that case we have an easy, numeric way to check if our ratio is represented on the tree, meaning the game will (eventually) end.
+
+It's time to get mathematical.
+
+# The conjecture, and the proof
+This is the part where the article gets quite technical. If you have no background in mathematics, it's probably hard to follow along. Definitely feel free to read along though. You can get a head start by reading up on _proof by natural induction_, which is a technique I'll be using to perform the proof.
+
+So first, what is it we are proposing exactly, and consequently, what do we need to prove?
+
+As mentioned before, I believe there are two things to prove, one of which seems obvious but deserves to be proven carefully, and the other which is as of yet comepletey uncertain:
+
+## The proposition.
+1. Given any node \\((x, y)\\) on any row \\(n\\) from the tree, we have \\(x + y = 2^{n + 1}\\).
+2. For any \\(x, y > 0\\) such that \\(\exists{n}\Bigg[\frac{x+y}{\gcd(x,y)} = 2^{n+1}\Bigg]\\), we have \\((x, y)\\) as a node on the tree.
+
+
+
+I won't give a detailed explanation, but in relation to our problem it (roughly!) boils down to this: if we assume our conjecture holds for all rows \\(n\\), and are able to show that then, it also holds for row \\(n + 1\\), this means that no matter what row you assume, the successor row will follow suit. On top of this you need to show there's a bottom case which also obeys the conjecture, which would be \\((1, 1)\\) in our case. When you've done all that, you have successfully proven the proposition to hold for any row \\(n\\).
+
+That's probably a little confusing, especially since I haven't been
+
+
+
+Okay, so what is it we're conjecturing, and how do we prove it?
+
