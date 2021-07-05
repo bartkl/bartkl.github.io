@@ -67,7 +67,20 @@ Due to these deterministic properties, you can do something very clever:
 
 > Start with a game you know will end, and from there, backtrack all possible preceding rounds.
 
+Let's get to work.
+
 ## The binary tree
+A nice way to visually represent the possible rounds in games that (eventually) end, is a _binary tree_. Before I elaborate on that any further though, let's first make some more observations.
+
+Firstly, what really matters in these games is not the actual amounts of points the players have, or even the absolute total. What matters are the ratios of point distribution among players. For example, whether both players have \\(100\\) points or just \\(1\\) is irrelevant. In both cases there's a \((1:1\\) ratio, which is what matters.
+
+Looking at it this way, we can normalize all possible ratios such that all common divisors are factored out, leaving a single representative pair. The pair \\(1, 3\\) will represent the ratios \\(1:3\\), \\(20:60\\), and so on.
+
+So, any round can now be represented by a single pair of numbers. It's time to build our tree.
+
+Recall that backtracking from a given round leads to exactly two preceding rounds that could have happened. This is why the binary tree is a perfect visualization. On row \\(0\\), we have the root node \\(1,1\\), which means the game has ended. On row \\(1\\), there's two child nodes which each represent a possible preceding round. And so forth.
+
+Here's part of the beginning of the tree:
 
 
 
