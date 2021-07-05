@@ -87,13 +87,13 @@ Here's part of the beginning of the tree:
 Some observations and conventions:
 
 - The tree is mirrored over the y axis, and we can consider only one half without losing any generality, since it's irrelevant for our purposes whether Alice has \\(100\\) points and Bob has \\(200\\), or vice versa.
-- The rows are numbered, starting with row \((0\\). This will come in handy later.
+- The rows are numbered, starting with row \\(0\\). This will come in handy later.
 - For any pair \\(x, y\\) we will say that the \\(x\\) parts belong to player \\(1\\), and the other \\(y\\) parts to player \\(2\\).
 - Since we're backtracking, row \\(n + 1\\) is the turn _before_ row \\(n\\).
 
 It might not be immediately obvious how to derive the pairs in the tree. Let's do an example to demonstrate how you can go about it. In row \\(1\\) we have the pair \\(1, 3\\). Let's determine the possible preceding rounds. First, note that \\(1, 3\\) is equivalent with a ratio of \\(2:6\\). This will make the arithmetic easier. So, either:
 
-1. Player \\(1\) doubled his points in the last round, in which case they used to have \\(1\\) part, meaning player \\(2\\) must have lost one part, meaning they had \\(7\\) parts. So, this corresponds to the node \\(1, 7\\). Note that these numbers are coprime, and don't need further normalization.
+1. Player \\(1\\) doubled his points in the last round, in which case they used to have \\(1\\) part, meaning player \\(2\\) must have lost one part, meaning they had \\(7\\) parts. So, this corresponds to the node \\(1, 7\\). Note that these numbers are coprime, and don't need further normalization.
 2. Player \\(2\\) doubled his points, so they had \\(3\\) parts, and player \\(1\\) must have had \\(5\\) parts. This corresponds with the node \\(5, 3\\).
 
 
