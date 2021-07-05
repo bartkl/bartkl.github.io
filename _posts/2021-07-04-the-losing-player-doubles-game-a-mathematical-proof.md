@@ -172,7 +172,7 @@ Note that now, \\(p'', q''\\) are coprime.
 Let's explore the possibilities mentioned earlier with this new information:
 
 1. If \\((p, q)\\) is a node on row \\(n + 1\\), then \\((p'', q'')\\) is a node on row \\(n\\). That means \\(p'' + q'' = 2^{n + 1}\\) by the induction assumption, but we also have \\(p'' + q'' = 2^{n + 1} = p + \frac{q - p}{2}\\), so \\(2^{n + 2} = p + q\\). This contradicts \\(p + q \neq 2^{n + 2}\\), so this situation cannot occur.
-2. Suppose \\(p + q = 2^{n + 2}\\). We have \\(p'' + q'' = p + \frac{q - p}{2}\\), so \\(2(p'' + q'') = p + q = 2^{n + 2}\\), so \\(p'' + q'' = 2^{n + 1}\\). By the induction hypothesis, this means \\((p'', q'')\\) is in row \\(n\\). But that means the predecessor \\(p, q\\) is in row \\(n + 1\\). Again, a contradiction, so this situation also cannot occur.
+2. Suppose \\(p + q = 2^{n + 2}\\). We have \\(p'' + q'' = p + \frac{q - p}{2}\\), so \\(2(p'' + q'') = p + q = 2^{n + 2}\\), so \\(p'' + q'' = 2^{n + 1}\\). By the induction hypothesis, this means \\((p'', q'')\\) is in row \\(n\\). But that means the predecessor \\((p, q)\\) is in row \\(n + 1\\). Again, a contradiction, so this situation also cannot occur.
 
 Since neither of these situations can occur, we have a contradiction. Therefore, the hypothesis _does_ hold for \\(n + 1\\), and with that, the proof is complete.
 
