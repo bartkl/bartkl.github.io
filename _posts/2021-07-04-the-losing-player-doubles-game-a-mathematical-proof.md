@@ -4,7 +4,7 @@ author: Bart
 title: "The Losing Player Doubles Game: A Mathematical Proof"
 ---
 
-# Poker, but not quite
+## Poker, but not quite
 Back in the day I used to play poker with friends, and at some point when two people were left playing each other, I wondered:
 
 > What would happen if both players keep going all-in, and each round the person with the least value in chips wins?
@@ -21,7 +21,7 @@ The interesting question that remains is:
 
 This is the question I will be answering in this article.
 
-# Defining _The Losing Player Doubles Game_
+## Defining _The Losing Player Doubles Game_
 Games need names, so I've decided to dub this game _The Losing Player Doubles Game_, since every round the player who is behind is the one who wins that round.
 
 First, let's define the game more rigorously. In that process, let's also ditch the poker terminology.
@@ -49,14 +49,14 @@ This time, either both players have an equal amount of points, meaning the game 
 
 Of course this definition is not very formal, but it suffices. Later, when we use mathematical techniques to proof some of our assertions, we will definitely formalize more.
 
-# Playing around with the game
+## Playing around with the game
 Whenever you're dealing with a problem like this, it's a good idea to fiddle around with some examples. Earlier, we saw an example of a scenario which led to a game that never ends. If you like to, try out examples of your own. Which games end and which ones don't? Can you identify any properties or patterns? Here's an example of a game that does end: Alice has \\(300\\) points, and Bob has \\(500\\). In the next round they'll have \\(600\\) and \\(200\\) points respectively, and then both will have \\(400\\) points, and thus the game ends.
 
 So yeah, I told you exploring examples as a good idea, and it is, but I doubt it will lead you to the discovery of the answer to this problem. If you can prove me otherwise though, make sure to share that with me!
 
 We need to approach this more methodically.
 
-# Getting methodical
+## Getting methodical
 Recall that I said this game is deterministic. Let's look more closely at what this entails.
 
 Given a certain round in which the game has not ended yet, one player has fewer points and therefore will double his amount of points. There's no other way the game can possibly proceed, so this is clearly deterministic.
@@ -69,7 +69,7 @@ Due to these deterministic properties, you can do something very clever:
 
 Let's get to work.
 
-## The binary tree
+### The binary tree
 A nice way to visually represent the possible rounds in games that (eventually) end, is a _binary tree_. Before I elaborate on that any further though, let's first make some more observations.
 
 Firstly, what really matters in these games is not the actual amounts of points the players have, or even the absolute total. What matters are the ratios of point distribution among players. For example, whether both players have \\(100\\) points or just \\(1\\) is irrelevant. In both cases there's a \\(1:1\\) ratio, which is what matters.
@@ -98,7 +98,7 @@ It might not be immediately obvious how to derive the pairs in the tree. Let's d
 
 Now that we have a neat visualization, it's time to get to solving the puzzle.
 
-# The solution
+## The solution
 The binary tree we just built enables us to solve the problem quite easily.
 
 First, the root node \\((1, 1)\\) represents (and is the only node doing so) an ending game. A game ends, if and only if, the points ratio corresponds to this node.
@@ -109,35 +109,34 @@ Then, note that we generated _all_ possible preceding ratios between the players
 
 Okay, that's nice, but: given some point counts for both players, how can I tell whether the ratio corresponds with a node on the tree?
 
-## The pattern
-To answer that question, it would be sufficient identify some property that holds for every node in the tree. And we're in luck, because it's not very hard to see:
+### The pattern
+To answer that question, it would help if we could identify some property that holds for every node in the tree. And we're in luck, because it's not very hard to see:
 
 > Given some row \\(n\\) of the tree, it holds that for every node \\((x, y)\\) in that row, we have \\(x + y = 2^{n + 1}\\).
 
 This makes sense, because row \\(0\\) clearly has a sum of \\(2\\), and since the coprime normalization we apply requires us to multiply by \\(2\\) every row we advance (see the example calculation earlier, with the \\(2:6\\) ratio), this sum gets multipied by \\(2\\) for the next row.
 
-So, how does this help us? Well, that depends. It seems clear that if a node is in this tree, its parts add up to \\(2^{n}\\), where \\(n\\) is the row number. However, the reverse is not necessarily true, i.e.: if we have coprime \\(x, y\\) such that \\(x + y = 2^{n}\\) for some \\(n\\), we don't know if this means \\((x, y)\\) is a node in the tree (on row \\(n\\) for that matter). Note that if this turns out to be the case, we have what we are looking for, since in that case we have an easy, numeric way to check if our ratio is represented on the tree, meaning the game will (eventually) end.
+Anyways, how does this help us? It doesn't immediately. However, if its reverse also holds, we would obtain a satisfactory result:
 
-It's time to get mathematical.
+> Conjecture: for any coprime \\(x, y\\):
+> \\[x + y = 2^{n + 1} \text{ for some } n \Leftrightarrow (x, y) \text{ is a node in the tree.}\\]
 
-# The conjecture, and the proof
-This is the part where the article gets quite technical. If you have no background in mathematics, it's probably hard to follow along. Definitely feel free to read along though. You can get a head start by reading up on _proof by natural induction_, which is a technique I'll be using to perform the proof.
+For those unfamiliar with the double arrow symbol: it means "if and only if", basically signifying logical equivalence between both sides, i.e. the left hand side implies the right hand side and vice versa.
 
-So first, what is it we are proposing exactly, and consequently, what do we need to prove?
+Things are getting mathematical.
 
-As mentioned before, I believe there are two things to prove, one of which seems obvious but deserves to be proven carefully, and the other which is as of yet comepletey uncertain:
+## The formalization and proof
+This is the part where the article gets quite technical. If you have no background in mathematics, it's probably hard to follow along. Definitely feel free to read along though. You can get a head start by reading up on _proof by natural induction_, which is a technique I'll be using to perform the proof. Also, you may not be familiar with some of the notation, in which case I suggest you read up on _predicate logic_.
 
-## The proposition.
-1. Given any node \\((x, y)\\) on any row \\(n\\) from the tree, we have \\(x + y = 2^{n + 1}\\).
-2. For any \\(x, y > 0\\) such that \\(\exists{n}\Bigg[\frac{x+y}{\gcd(x,y)} = 2^{n+1}\Bigg]\\), we have \\((x, y)\\) as a node on the tree.
+First, let's reiterate our proposition to prove:
 
+### Proposition: _Solution_.
+> Given coprime \\(x, y > 0\\):
+> \\[\exists{n}\Bigg[x + y = 2^{n + 1}\Bigg] \Leftrightarrow (x, y) \text{ is a node in the tree.}\\]
 
-
-I won't give a detailed explanation, but in relation to our problem it (roughly!) boils down to this: if we assume our conjecture holds for all rows \\(n\\), and are able to show that then, it also holds for row \\(n + 1\\), this means that no matter what row you assume, the successor row will follow suit. On top of this you need to show there's a bottom case which also obeys the conjecture, which would be \\((1, 1)\\) in our case. When you've done all that, you have successfully proven the proposition to hold for any row \\(n\\).
-
-That's probably a little confusing, especially since I haven't been
-
+### Proof.
 
 
-Okay, so what is it we're conjecturing, and how do we prove it?
-
+# Critical notes
+- The tree is not formally defined. This could be done by a recursive definition.
+- Some expressions are vague, like "... we have \\((x, y)\\) as a node on the tree." This is intimately related to the lack of a formal definition of the tree.
