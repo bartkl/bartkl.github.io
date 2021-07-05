@@ -83,3 +83,5 @@ Recall that backtracking from a given round leads to exactly two preceding round
 Here's part of the beginning of the tree:
 
 ![Binary tree](/assets/img/bintree.png)
+
+Note that the tree is mirrored over the y axis, and we can consider only one half without losing any generality, since it's irrelevant for our purposes whether Alice has \\(100\\) points and Bob has \\(200\\), or vice versa. Furthermore, the tree has its rows numbered, starting with row \((0\\).
