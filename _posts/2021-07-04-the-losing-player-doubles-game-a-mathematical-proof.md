@@ -123,18 +123,27 @@ Anyways, how does this help us? It doesn't immediately. However, if its reverse 
 
 For those unfamiliar with the double arrow symbol: it means "if and only if", basically signifying logical equivalence between both sides, i.e. the left hand side implies the right hand side and vice versa.
 
-Things are getting mathematical.
+If this is indeed true, then we can determine whether our game ends by doing the following:
+
+> 1. Take the point counts of each player and divide them by the greatest common divisor. This way, all common divisors are factored out, and you end up with a coprime normalized pair.
+> 2. Add the obtained coprime numbers.
+>   a. If they add up to some power of \\(2\\), this game will end.
+>   b. Otherwise, the game will not end.
+
+It is now time to get to actually proving the conjecture. Warning: things are about to get very mathematical.
 
 ## The formalization and proof
 This is the part where the article gets quite technical. If you have no background in mathematics, it's probably hard to follow along. Definitely feel free to read along though. You can get a head start by reading up on _proof by natural induction_, which is a technique I'll be using to perform the proof. Also, you may not be familiar with some of the notation, in which case I suggest you read up on _predicate logic_.
 
-First, let's reiterate our proposition to prove:
+First, let's reiterate our conjecture to prove:
 
 ### Proposition: _Solution_.
 > Given coprime \\(x, y > 0\\):
 > \\[\exists{n}\Bigg[x + y = 2^{n + 1}\Bigg] \Leftrightarrow (x, y) \text{ is a node in the tree.}\\]
 
 ### Proof.
+#### \\(\Rightarrow\\)
+Test.
 
 
 # Critical notes
