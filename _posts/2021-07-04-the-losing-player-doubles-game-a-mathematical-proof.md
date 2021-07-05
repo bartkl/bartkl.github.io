@@ -82,7 +82,4 @@ Recall that backtracking from a given round leads to exactly two preceding round
 
 Here's part of the beginning of the tree:
 
-
-
-
-![My helpful screenshot](/assets/img/a.png)
+![Binary tree](/assets/img/bintree.png)
