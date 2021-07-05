@@ -1,4 +1,4 @@
 theme: jekyll-theme-minimal
-highlighter: pygments
+highlighter: rouge
 kramdown:
   syntax_highlighter: pygments
