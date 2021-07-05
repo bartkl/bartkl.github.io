@@ -9,7 +9,7 @@ Back in the day I used to play poker with friends, and at some point when two pe
 
 > What would happen if both players keep going all-in, and each round the person with the least value in chips wins?
 
-For example, let's say Alice has \\(100\\) value in chips, and Bob has \((200\\). That means Alice wins, and doubles to \\(200\\)), meaning Bob loses \\(100\\) to her leaving him with \\(100\\). This time, Bob is the poor man, meaning he doubles his points to \\(200\\), and Alice ends up with \\(100\\). I think it's clear what's going on here: Alice and Bob will keep going back and forth this way, i.e. the game will be stuck in this cycle, meaning it will not end.
+For example, let's say Alice has \\(100\\) value in chips, and Bob has \\(200\\). That means Alice wins, and doubles to \\(200\\)), meaning Bob loses \\(100\\) to her leaving him with \\(100\\). This time, Bob is the poor man, meaning he doubles his points to \\(200\\), and Alice ends up with \\(100\\). I think it's clear what's going on here: Alice and Bob will keep going back and forth this way, i.e. the game will be stuck in this cycle, meaning it will not end.
 
 Immediately, this example proves:
 
