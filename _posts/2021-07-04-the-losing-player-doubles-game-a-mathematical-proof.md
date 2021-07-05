@@ -179,5 +179,5 @@ Since neither of these situations can occur, we have a contradiction. Therefore,
 # Critical notes
 - Terminology of rounds is confusing: they move inversely compared to rows.
 - The tree is not formally defined. This could be done by a recursive definition.
-- Some expressions are vague, like "... we have \\((x, y)\\) as a node on the tree." This is intimately related to the lack of a formal definition of the tree.
+- Some expressions are vague, like "... we have \\((x, y)\\) as a node on the tree." This is intimately related to the lack of a formal definition of the tree mentioned just now.
 
