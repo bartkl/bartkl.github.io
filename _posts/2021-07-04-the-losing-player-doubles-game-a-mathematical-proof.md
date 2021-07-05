@@ -119,16 +119,16 @@ This makes sense, because row \\(0\\) clearly has a sum of \\(2\\), and since th
 Anyways, how does this help us? It doesn't immediately. However, if its reverse also holds, we would obtain a satisfactory result:
 
 > Conjecture: for any coprime \\(x, y\\):
-> \\[x + y = 2^{n + 1} \text{ for some } n \Leftrightarrow (x, y) \text{ is a node in the tree.}\\]
+> \\[(x, y) \text{ is a node in row } n \Leftrightarrow x + y = 2^{n + 1}\\]
 
 For those unfamiliar with the double arrow symbol: it means "if and only if", basically signifying logical equivalence between both sides, i.e. the left hand side implies the right hand side and vice versa.
 
 If this is indeed true, then we can determine whether our game ends by doing the following:
 
-> 1. Take the point counts of each player and divide them by the greatest common divisor. This way, all common divisors are factored out, and you end up with a coprime normalized pair.
-> 2. Add the obtained coprime numbers.
->   a. If they add up to some power of \\(2\\), this game will end.
->   b. Otherwise, the game will not end.
+1. Take the point counts of each player and divide them by the greatest common divisor. This way, all common divisors are factored out, and you end up with a coprime normalized pair.
+2. Add the obtained coprime numbers.
+  a. If they add up to some power of \\(2\\), this game will end.
+  b. Otherwise, the game will not end.
 
 It is now time to get to actually proving the conjecture. Warning: things are about to get very mathematical.
 
@@ -138,12 +138,59 @@ This is the part where the article gets quite technical. If you have no backgrou
 First, let's reiterate our conjecture to prove:
 
 ### Proposition: _Solution_.
-> Given coprime \\(x, y > 0\\):
-> \\[\exists{n}\Bigg[x + y = 2^{n + 1}\Bigg] \Leftrightarrow (x, y) \text{ is a node in the tree.}\\]
+Given coprime \\(x, y > 0\\):
+\\[(x, y) \text{ is a node in row } n \Leftrightarrow x + y = 2^{n + 1}\\]
 
 ### Proof.
-#### \\(\Rightarrow\\)
-Test.
+We prove both of the implication directions separately. In both we will of course assume all \\(x, y\\) are coprime and positive.
+
+#### First part (\\(\Rightarrow\\))
+To prove:
+
+\\[(x, y) \text{ is a node in row } n \Rightarrow x + y = 2^{n + 1}\\]
+
+We will use natural induction on \\(n\\).
+
+For \\(n = 0\\), there's only one node, namely \\((1, 1)\\). Clearly, \\(1 + 1 = 2 = 2^{0+1}\\), so this case holds true.
+
+Now, assume the hypothesis holds for all \\(n\\). We will now show that then, it also holds for \\(n + 1\\).
+
+Let \\((p, q)\\) be an arbitrary node from row \\(n + 1\\). Without loss of generality, we can assume \\(p < q\\). Let's apply the rules to advance the game:
+
+\\[
+    p' = 2p
+    q' = q - p
+\\]
+
+Giving us the ratio \\(p':q'\\) in the next round (row \\(n\\)). Now note that since \\(p, q\\) are coprime, they are odd, and therefore \\(p', q'\\) are even. So we can safely divide these rational parts by \\(2\\):
+
+\\[
+    p'' = p
+    q'' = \frac{q - p}{2}
+
+\\]
+
+Since these are now coprime-normalized, we have established that \\((p'', q'')\\) is a node in row \\(n\\).
+
+Let's add those numbers up:
+
+\\[
+    p'' + q'' = p + \frac{q - p}{2}
+    2(p'' + q'') = 2p + q - p
+    2(p'' + q'') = p + q
+\]]
+
+By the induction assumption, we know that \\(p'' + q'' = 2^{n + 1}\\), so:
+
+\\[
+    2(p'' + q'') = p + q
+    2 \cdot 2^{n + 1} = p + q
+    2^{n + 2} = p + q
+\\]
+
+Recall that \\((p, q)\\) was chosen as a node on row \\(n + 1\\), so we have successfully demonstrated that the condition is satisfied for \\(n + 1\\). It follows then from this proof by mathematical induction that this part of the proposition is true.
+
+
 
 
 # Critical notes
