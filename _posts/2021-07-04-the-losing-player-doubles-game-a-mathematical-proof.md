@@ -119,7 +119,7 @@ This makes sense, because row \\(0\\) clearly has a sum of \\(2\\), and since th
 Anyways, how does this help us? It doesn't immediately. However, if its reverse also holds, we would obtain a satisfactory result:
 
 > Conjecture: for any coprime \\(x, y\\):
-> \\[(x, y) \text{ is a node in row } n \Leftrightarrow x + y = 2^{n + 1}\\]
+> $$(x, y) \text{ is a node in row } n \Leftrightarrow x + y = 2^{n + 1}$$
 
 For those unfamiliar with the double arrow symbol: it means "if and only if", basically signifying logical equivalence between both sides, i.e. the left hand side implies the right hand side and vice versa.
 
@@ -139,58 +139,61 @@ First, let's reiterate our conjecture to prove:
 
 ### Proposition: _Solution_.
 Given coprime \\(x, y > 0\\):
-\\[(x, y) \text{ is a node in row } n \Leftrightarrow x + y = 2^{n + 1}\\]
+$$(x, y) \text{ is a node in row } n \Leftrightarrow x + y = 2^{n + 1}$$
 
 ### Proof.
 We will use natural induction on \\(n\\).
 
 For \\(n = 0\\), there's only one node, namely \\((1, 1)\\). Therefore, what needs to be proved is:
 
-\\[(1, 1) \text{ is a node in row } 0 \Rightarrow 1 + 1 = 2^{0 + 1}\\]
+$$(1, 1) \text{ is a node in row } 0 \Rightarrow 1 + 1 = 2^{0 + 1}$$
 
 This is trivially true, since no other coprime numbers have a sum of \\(2\\).
 
 Now, assume the hypothesis holds for all \\(n\\). We will now show that then, it also holds for \\(n + 1\\).
 
-Let \\(p, q > 0\\) be coprimes. Then if the proposition is true for \\(n + 1\\), both of these must be true:
+2. \\(p + q = 2^{n + 2} \Rightarrow (p, q) \text{ is a node on row } n + 1\\)
 
-1. \\((p, q)\\) is a node on row \\(n + 1\\) \Rightarrow \\(p + q = 2^{n + 2}\\)
-2. \\(p + q = 2^{n + 2}\\) \Rightarrow \\((p, q)\\) is a node on row \\(n + 1\\).
-
-Without loss of generality, we can assume \\(p < q\\).
-Let's apply the rules to advance the game to the next round. This will come in handy in a second:
+Let \\(p, q > 0\\) be coprimes. Without loss of generality, we can assume \\(p < q\\). Let's apply the rules to advance the game to the next round. This will come in handy in a second:
 
 $$\begin{aligned}
 p' &= 2p \\
 q' &= q - p
 \end{aligned}$$
 
-$$\begin{aligned}
-p' &= 2p \\\\
-q' &= q - p
-\end{aligned}$$
-
-\\[\begin{aligned}
-p' &= 2p
-q' &= q - p
-\end{aligned}\\]
-
 Giving us the ratio \\(p':q'\\) in the next round. Now note that since \\(p, q\\) are coprime, they are odd, and therefore \\(p', q'\\) are even. So we can safely divide these rational parts by \\(2\\):
 
-\\[p'' = p\\]
-\\[q'' = \frac{q - p}{2}\\]
+$$\begin{aligned}
+p'' &= p \\
+q'' = \frac{q - p}{2}
+\end{aligned}$$
 
 Note that now, \\(p'', q''\\) are coprime.
 
-Let's go back to the two statements to prove:
+Finally, we can relate the sums of \\(p, q\\) and \\(p'', q''\\):
 
-1. If \\((p, q)\\) is a node on row \\(n + 1\\), then \\((p'', q'')\\) is a node on row \\(n\\). That means \\(p'' + q'' = 2^{n + 1}\\) by the induction assumption, but we also have \\(p'' + q'' = 2^{n + 1} = p + \frac{q - p}{2}\\), so \\(2^{n + 2} = p + q\\). So, (1) holds.
-2. Suppose \\(p + q = 2^{n + 2}\\). We have \\(p'' + q'' = p + \frac{q - p}{2}\\), so \\(2(p'' + q'') = p + q = 2^{n + 2}\\), so \\(p'' + q'' = 2^{n + 1}\\). By the induction hypothesis, this means \\((p'', q'')\\) is in row \\(n\\). But that means the predecessor \\((p, q)\\) is in row \\(n + 1\\). So, (2) holds also.
+$$\begin{aligned}
+p'' + q'' &= p + \frac{q - p}{2}
+2(p'' + q'') &= 2p + q - p
+2(p'' + q'') &= p + q
+\end{aligned}$$
 
-Since (1) and (2) hold, we have proven the case for \\(n + 1\\), thereby concluding this proof successfully.
+Alright, with these insights to our disposal, let's go back to proving the case \\(n + 1\\). There's two directions of implication we need to prove. Let's get to work.
+
+#### (\\(\Rightarrow))
+If \\((p, q)\\) is a node on row \\(n + 1\\), then \\((p'', q'')\\) is a node on row \\(n\\). Using the induction assumption, that means \\(p'' + q'' = 2^{n + 1}\\). But we know \\(p + q = 2(p'' + q'')\)), so it follows that \\(p + q = 2^{n + 2}\\).
+
+#### (\\(\Leftarrow))
+Suppose \\(p + q = 2^{n + 2}\\). Since \\(p'' + q'' = \frac{1}{2} \cdot (p + q)\\), this means \\(p'' + q'' = 2^{n + 1}\\). By the induction hypothesis, this means \\((p'', q'')\\) is in row \\(n\\). But that means the predecessor \\((p, q)\\) is in row \\(n + 1\\).
+
+Since both directions of the implication hold, we have proven the case for \\(n + 1\\), thereby concluding this proof successfully.
 
 # Critical notes
 - Terminology of rounds is confusing: they move inversely compared to rows.
 - The tree is not formally defined. This could be done by a recursive definition.
 - Some expressions are vague, like "... we have \\((x, y)\\) as a node on the tree." This is intimately related to the lack of a formal definition of the tree mentioned just now.
+- At some point in the proof, I say:
 
+> Note that now, \\(p'', q''\\) are coprime.
+
+This might need some more explanation/proof.
