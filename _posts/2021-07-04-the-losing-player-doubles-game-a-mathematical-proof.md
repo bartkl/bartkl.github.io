@@ -127,8 +127,8 @@ If this is indeed true, then we can determine whether our game ends by doing the
 
 1. Take the point counts of each player and divide them by the greatest common divisor. This way, all common divisors are factored out, and you end up with a coprime normalized pair.
 2. Add the obtained coprime numbers.
-  a. If they add up to some power of \\(2\\), this game will end.
-  b. Otherwise, the game will not end.
+    a. If they add up to some power of \\(2\\), this game will end.
+    b. Otherwise, the game will not end.
 
 It is now time to get to actually proving the conjecture. Warning: things are about to get very mathematical.
 
