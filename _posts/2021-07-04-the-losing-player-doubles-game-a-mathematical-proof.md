@@ -133,7 +133,7 @@ If this is indeed true, then we can determine whether our game ends by doing the
 It is now time to get to actually proving the conjecture. Warning: things are about to get very mathematical.
 
 ## The formalization and proof
-This is the part where the article gets quite technical. If you have no background in mathematics, it's probably hard to follow along. Definitely feel free to read along though. You can get a head start by reading up on _proof by natural induction_, which is a technique I'll be using to perform the proof. Also, you may not be familiar with some of the notation, in which case I suggest you read up on _predicate logic_.
+This is the part where the article gets quite technical. If you have no background in mathematics, it's probably hard to follow along. Definitely feel free to read along though. You can get a head start by reading up on _proof by mathematical induction_, which is a technique I'll be using to perform the proof. Also, you may not be familiar with some of the notation, in which case I suggest you read up on _predicate logic_.
 
 First, let's reiterate our conjecture to prove:
 
@@ -143,7 +143,7 @@ Given coprime \\(x, y > 0\\):
 $$(x, y) \text{ is a node in row } n \Leftrightarrow x + y = 2^{n + 1}$$
 
 ### Proof.
-We will use natural induction on \\(n\\).
+We will use mathematical induction on \\(n\\).
 
 For \\(n = 0\\), there's only one node, namely \\((1, 1)\\). Therefore, what needs to be proved is:
 
