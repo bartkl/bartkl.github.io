@@ -169,11 +169,11 @@ This pair \\(p'', q''\\) is coprime, making it the normalized form representing 
 
 Suppose \\(p'', q''\\) are not coprime. Then:
 
-\begin{aligned}
+$$\begin{aligned}
 \exists{r}[r &| p'' \wedge r | q''] \\
 r | p &\wedge r \Big| \frac{q - p}{2} \\
 r | p &\wedge 2r | q - p
-\end{aligned}
+\end{aligned}$$
 
 So, for some \\(k, l\\):
 
