@@ -177,12 +177,12 @@ r | p &\wedge 2r | q - p
 
 So, for some \\(k, l\\):
 
-\begin{aligned}
+$$\begin{aligned}
 p &= k \cdot r \\
 q - p &= l \cdot 2r
 q &= r(k + 2l)
 r &| q
-\end{aligned}
+\end{aligned}$$
 
 So, we have a common divisor \\(r\\) between \(p\\) and \\(q\\), which contradicts the fact that they are coprime. Therefore, our assumption that \\(p'', q''\\) are not coprime must be wrong, and the conclusion is that they are coprime.
 
