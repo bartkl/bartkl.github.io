@@ -160,8 +160,18 @@ Let \\(p, q > 0\\) be coprimes. Then if the proposition is true for \\(n + 1\\),
 Without loss of generality, we can assume \\(p < q\\).
 Let's apply the rules to advance the game to the next round. This will come in handy in a second:
 
-\\[\begin{aligned}
+$$\begin{aligned}
 p' &= 2p \\
+q' &= q - p
+\end{aligned}$$
+
+$$\begin{aligned}
+p' &= 2p \\\\
+q' &= q - p
+\end{aligned}$$
+
+\\[\begin{aligned}
+p' &= 2p
 q' &= q - p
 \end{aligned}\\]
 
