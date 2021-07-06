@@ -179,7 +179,7 @@ p'' + q'' &= p + \frac{q - p}{2} \\
 Alright, with these insights to our disposal, let's go back to proving the case \\(n + 1\\). There's two directions of implication we need to prove. Let's get to work.
 
 #### (\\(\Rightarrow\\))
-If \\((p, q)\\) is a node on row \\(n + 1\\), then \\((p'', q'')\\) is a node on row \\(n\\). Using the induction assumption, that means \\(p'' + q'' = 2^{n + 1}\\). But we know \\(p + q = 2(p'' + q'')\)), so it follows that \\(p + q = 2^{n + 2}\\).
+If \\((p, q)\\) is a node on row \\(n + 1\\), then \\((p'', q'')\\) is a node on row \\(n\\). Using the induction assumption, that means \\(p'' + q'' = 2^{n + 1}\\). But we know \\(p + q = 2(p'' + q'')\\), so it follows that \\(p + q = 2^{n + 2}\\).
 
 #### (\\(\Leftarrow\\))
 Suppose \\(p + q = 2^{n + 2}\\). Since \\(p'' + q'' = \frac{1}{2} \cdot (p + q)\\), this means \\(p'' + q'' = 2^{n + 1}\\). By the induction hypothesis, this means \\((p'', q'')\\) is in row \\(n\\). But that means the predecessor \\((p, q)\\) is in row \\(n + 1\\).
