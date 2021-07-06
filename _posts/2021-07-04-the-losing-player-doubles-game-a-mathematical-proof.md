@@ -165,7 +165,26 @@ p'' &= p \\
 q'' &= \frac{q - p}{2}
 \end{aligned}$$
 
-Providing the coprime \\(p'', q''\\) representation of the ratio \\(p':q'\\).
+This pair \\(p'', q''\\) is coprime, making it the normalized form representing the next round. I will prove this right now using a proof from contradiction.
+
+Suppose \\(p'', q''\\) are not coprime. Then:
+
+\begin{aligned}
+\exists{r}[r &| p'' \wedge r | q''] \\
+r | p &\wedge r \Big| \frac{q - p}{2} \\
+r | p &\wedge 2r | q - p
+\end{aligned}
+
+So, for some \\(k, l\\):
+
+\begin{aligned}
+p &= k \cdot r \\
+q - p &= l \cdot 2r
+q &= r(k + 2l)
+r &| q
+\end{aligned}
+
+So, we have a common divisor \\(r\\) between \(p\\) and \\(q\\), which contradicts the fact that they are coprime. Therefore, our assumption that \\(p'', q''\\) are not coprime must be wrong, and the conclusion is that they are coprime.
 
 Finally, we can then relate the sums of \\(p, q\\) and \\(p'', q''\\):
 
