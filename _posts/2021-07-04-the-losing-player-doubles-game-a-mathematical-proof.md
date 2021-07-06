@@ -139,6 +139,7 @@ First, let's reiterate our conjecture to prove:
 
 ### The solution proposition
 Given coprime \\(x, y > 0\\):
+
 $$(x, y) \text{ is a node in row } n \Leftrightarrow x + y = 2^{n + 1}$$
 
 ### Proof.
