@@ -187,7 +187,7 @@ Suppose \\(p + q = 2^{n + 2}\\). Since \\(p'' + q'' = \frac{1}{2} \cdot (p + q)\
 Since both directions of the implication hold, we have proven the case for \\(n + 1\\), thereby concluding this proof successfully.
 
 ## Critical notes
-- Terminology of rounds is confusing: they move inversely compared to rows.
+- Terminology of rounds/turns is confusing: they move inversely compared to rows.
 - The tree is not formally defined. This could be done by a recursive definition.
 - Some expressions are vague, like "... we have \\((x, y)\\) as a node on the tree." This is intimately related to the lack of a formal definition of the tree mentioned just now.
 - At some point in the proof, I say:
