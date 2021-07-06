@@ -184,7 +184,7 @@ q &= r(k + 2l) \\
 r &| q
 \end{aligned}$$
 
-So, we have a common divisor \\(r\\) between \(p\\) and \\(q\\), which contradicts the fact that they are coprime. Therefore, our assumption that \\(p'', q''\\) are not coprime must be wrong, and the conclusion is that they are coprime.
+So, we have a common divisor \\(r\\) between \\(p\\) and \\(q\\), which contradicts the fact that they are coprime. Therefore, our assumption that \\(p'', q''\\) are not coprime must be wrong, and the conclusion is that they are coprime.
 
 Finally, we can then relate the sums of \\(p, q\\) and \\(p'', q''\\):
 
