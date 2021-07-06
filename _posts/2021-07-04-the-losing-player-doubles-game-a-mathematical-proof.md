@@ -152,9 +152,7 @@ This is trivially true, since no other coprime numbers have a sum of \\(2\\).
 
 Now, assume the hypothesis holds for all \\(n\\). We will now show that then, it also holds for \\(n + 1\\).
 
-2. \\(p + q = 2^{n + 2} \Rightarrow (p, q) \text{ is a node on row } n + 1\\)
-
-Let \\(p, q > 0\\) be coprimes. Without loss of generality, we can assume \\(p < q\\). Let's apply the rules to advance the game to the next round. This will come in handy in a second:
+Let \\(p, q > 0\\) be coprimes. Without loss of generality, we can assume \\(p < q\\). Let's apply the rules to advance the game to the next round. Afterwards, we'll expose some properties and relationships between the next round and this one that will come in handy in the proof.
 
 $$\begin{aligned}
 p' &= 2p \\
@@ -165,7 +163,7 @@ Giving us the ratio \\(p':q'\\) in the next round. Now note that since \\(p, q\\
 
 $$\begin{aligned}
 p'' &= p \\
-q'' = \frac{q - p}{2}
+q'' &= \frac{q - p}{2}
 \end{aligned}$$
 
 Note that now, \\(p'', q''\\) are coprime.
@@ -173,17 +171,17 @@ Note that now, \\(p'', q''\\) are coprime.
 Finally, we can relate the sums of \\(p, q\\) and \\(p'', q''\\):
 
 $$\begin{aligned}
-p'' + q'' &= p + \frac{q - p}{2}
-2(p'' + q'') &= 2p + q - p
+p'' + q'' &= p + \frac{q - p}{2} \\
+2(p'' + q'') &= 2p + q - p \\
 2(p'' + q'') &= p + q
 \end{aligned}$$
 
 Alright, with these insights to our disposal, let's go back to proving the case \\(n + 1\\). There's two directions of implication we need to prove. Let's get to work.
 
-#### (\\(\Rightarrow))
+#### (\\(\Rightarrow\\))
 If \\((p, q)\\) is a node on row \\(n + 1\\), then \\((p'', q'')\\) is a node on row \\(n\\). Using the induction assumption, that means \\(p'' + q'' = 2^{n + 1}\\). But we know \\(p + q = 2(p'' + q'')\)), so it follows that \\(p + q = 2^{n + 2}\\).
 
-#### (\\(\Leftarrow))
+#### (\\(\Leftarrow\\))
 Suppose \\(p + q = 2^{n + 2}\\). Since \\(p'' + q'' = \frac{1}{2} \cdot (p + q)\\), this means \\(p'' + q'' = 2^{n + 1}\\). By the induction hypothesis, this means \\((p'', q'')\\) is in row \\(n\\). But that means the predecessor \\((p, q)\\) is in row \\(n + 1\\).
 
 Since both directions of the implication hold, we have proven the case for \\(n + 1\\), thereby concluding this proof successfully.
