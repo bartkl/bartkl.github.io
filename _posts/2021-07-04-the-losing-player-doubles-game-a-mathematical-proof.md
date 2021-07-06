@@ -179,8 +179,8 @@ So, for some \\(k, l\\):
 
 $$\begin{aligned}
 p &= k \cdot r \\
-q - p &= l \cdot 2r
-q &= r(k + 2l)
+q - p &= l \cdot 2r \\
+q &= r(k + 2l) \\
 r &| q
 \end{aligned}$$
 
