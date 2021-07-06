@@ -160,8 +160,10 @@ Let \\(p, q > 0\\) be coprimes. Then if the proposition is true for \\(n + 1\\),
 Without loss of generality, we can assume \\(p < q\\).
 Let's apply the rules to advance the game to the next round. This will come in handy in a second:
 
+<p align"center">
 \\[p' = 2p\\]
 \\[q' = q - p\\]
+</p>
 
 Giving us the ratio \\(p':q'\\) in the next round. Now note that since \\(p, q\\) are coprime, they are odd, and therefore \\(p', q'\\) are even. So we can safely divide these rational parts by \\(2\\):
 
