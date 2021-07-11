@@ -20,7 +20,7 @@ layout: default
   {% for album in page.list %}
   <div class="album">
     <div class="album-art">
-      <img src="{{ site.static_files | where_exp: "basename", "basename == album.id" }}" />
+      <img src="/assets/images/{{ album.id }}.jpg" />
     </div>
     <div class="album-header">
       <span class="album-title">{{ data[album.id].title }}</span>
