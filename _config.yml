@@ -6,4 +6,5 @@ collections_dir: collections
 collections:
   music_albums:
     output: true
+    permalink: /:collection/:name
 

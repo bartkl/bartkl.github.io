@@ -2,7 +2,6 @@
 title: Favorite Albums From 2020
 layout: list
 collection: music_albums
-permalink: /lists/favorite-albums-2020
 
 list:
   - id: 1
