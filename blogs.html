@@ -3,12 +3,20 @@ layout: default
 title: Home
 ---
 
-Blogs:
+<h1>Blogs</h1>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <i>{{ post.date | date: "%Y-%m-%d" }}</i> &mdash; <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<nav id="blog-items">
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <div class="blog-item">
+          <span class="blog-item-prefix">{{ post.date | date: "%Y-%m-%d" }}</span>
+          <span class="blog-item-separator">&mdash;</span>
+          <span class="blog-item-link">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </span>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
