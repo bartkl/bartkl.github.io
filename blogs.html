@@ -1,0 +1,13 @@
+---
+title: Home
+---
+
+Blogs:
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <i>{{ post.date }}</i> &emdash; <a href={{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
