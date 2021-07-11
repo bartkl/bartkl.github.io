@@ -4,10 +4,10 @@ layout: list
 data: music_albums
 
 list:
-  - id: 01
+  - nr: 01
     rating: 5
     description: Lovely.
-  - id: 02
+  - nr: 02
     rating: 3
     description: Good stuff.
 ---

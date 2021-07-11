@@ -12,10 +12,10 @@ Je moeder.23
 <section id="list">
   {% for album in page.list %}
   <div>
-    {{ album.id }}
-    <span>{{ data[album.id].title }}</span>
-    <span>{{ data[album.id].year}}</span>
-    <span>{{ data[album.id].genre }}</span>
+    {{ album.nr }}
+    <span>{{ data[album.nr].title }}</span>
+    <span>{{ data[album.nr].year}}</span>
+    <span>{{ data[album.nr].genre }}</span>
     <div>{{ album.rating }}</div>
     <div>{{ album.description }}</div>
   </div>
