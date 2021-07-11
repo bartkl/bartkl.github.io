@@ -6,8 +6,15 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
-
-
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-
-{{ content }}
+<section id="list">
+  {% for album in list %}
+  <div>
+    <span>{{ album.id }}</span>
+    <span>{{ album.rating }}</span>
+    <span>{{ album.description }}</span>
+    <!--span>{{ site.music_albums[1].title }}</span>
+    <span>{{ site.music_albums[1].year}}</span>
+    <span>{{ site.music_albums[1].genre }}</span>
+    <span>4</span-->
+  </div>
+</section>
