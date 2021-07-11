@@ -4,10 +4,10 @@ layout: list
 data_src: music_albums
 
 list:
-  - kanker: 01
+  - kanker: jemoeder
     rating: 5
     description: Lovely.
-  - kanker: 02
+  - kanker: jemoeder2
     rating: 3
     description: Good stuff.
 ---
