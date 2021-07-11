@@ -4,19 +4,13 @@ title: Favorite Albums From 2020
 
 <section id="list">
 
-<div>
-  {% assign album = site.music_albums[1] %}
+{% for id in [1, 2] %}
+  {% assign album = site.music_albums[id] %}
   <span>{{ album.artist }}</span>
   <span>{{ album.title }}</span>
   <span>{{ album.year }}</span>
   <span>{{ album.genre }}</span>
 </div>
-<div>
-  {% assign album = site.music_albums[2] %}
-  <span>{{ album.artist }}</span>
-  <span>{{ album.title }}</span>
-  <span>{{ album.year }}</span>
-  <span>{{ album.genre }}</span>
-</div>
+{% endfor %}
 
 </section>
