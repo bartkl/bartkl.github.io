@@ -1,0 +1,16 @@
+---
+title: Favorite Albums From 2020
+---
+
+<section id="">
+
+{% for album in site.data.music %}
+<div>
+  <span>{{ album.artist }}</span>
+  <span>{{ album.album }}</span>
+  <span>{{ album.year }}</span>
+  <span>{{ album.rating }}</span>
+</div>
+{% endfor %}
+
+</section>

@@ -1,0 +1,9 @@
+albums:
+  - artist: Tool
+    album: Fear Inoculum
+    year: 2019
+    rating: 3
+  - artist: Slowdive
+    album: Slowdive
+    year: 2017
+    rating: 4
