@@ -4,4 +4,6 @@ kramdown:
   syntax_highlighter: pygments
 collections_dir: collections
 collections:
-  - music_albums
+  music_albums:
+    output: true
+

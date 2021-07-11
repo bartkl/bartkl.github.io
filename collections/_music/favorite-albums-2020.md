@@ -1,8 +1,9 @@
 ---
 title: Favorite Albums From 2020
 layout: list
+collection: music_albums
 
-albumslist:
+list:
   - id: 1
     rating: 5
     description: Lovely.

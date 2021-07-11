@@ -7,11 +7,11 @@ layout: default
 <h1>{{ page.title }}</h1>
 
 <section id="list">
-  {% for album in page.albumslist %}
+  {% for album in page.list %}
   <div>
-    <span>{{ album.id }}</span>
-    <span>{{ album.rating }}</span>
-    <span>{{ album.description }}</span>
+    <div>{{ album.id }}</div>
+    <div>{{ album.rating }}</div>
+    <div>{{ album.description }}</div>
     <!--span>{{ site.music_albums[1].title }}</span>
     <span>{{ site.music_albums[1].year}}</span>
     <span>{{ site.music_albums[1].genre }}</span>
