@@ -12,6 +12,7 @@ Je moeder.23
 <section id="list">
   {% for album in page.list %}
   <div>
+    {{ album | inspect }}
     {{ album.nr }}
     <span>{{ data[album.nr].title }}</span>
     <span>{{ data[album.nr].year}}</span>
