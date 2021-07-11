@@ -1,8 +1,10 @@
 1:
   artist: Tool
-  album: Fear Inoculum
+  title: Fear Inoculum
+  year: 2020
   genre: Metal
 2:
   artist: Slowdive
-  album: Slowdive
+  title: Slowdive
+  year: 2017
   genre: Shoegaze
