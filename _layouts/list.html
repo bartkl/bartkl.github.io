@@ -6,8 +6,8 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
-Je moeder.
-{% assign data = site.data | map: "music_albums" %}
+Je moeder.22
+{% assign data = site.data | map: data %}
 {{ data | inspect }}
 <section id="list">
   {% for album in page.list %}
