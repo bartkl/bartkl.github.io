@@ -4,13 +4,19 @@ title: Favorite Albums From 2020
 
 <section id="list">
 
-{% for album in site.data.music.favorite-albums-2020.albums %}
 <div>
+  {% assign album = site.music_albums[1]
+  <span>{{ .artist }}</span>
+  <span>{{ album.album }}</span>
+  <span>{{ album.year }}</span>
+  <span>{{ album.rating }}</span>
+</div>
+<div>
+  {% assign album = site.music_albums[2]
   <span>{{ album.artist }}</span>
   <span>{{ album.album }}</span>
   <span>{{ album.year }}</span>
   <span>{{ album.rating }}</span>
 </div>
-{% endfor %}
 
 </section>
