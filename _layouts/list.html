@@ -9,9 +9,9 @@ layout: default
 <section id="list">
   {% for album in page.list %}
   <div>
-    <span>{{ site.music_albums[album.id].title }}</span>
-    <span>{{ site.music_albums[album.id].year}}</span>
-    <span>{{ site.music_albums[album.id].genre }}</span>
+    <span>{{ data[album.id].title }}</span>
+    <span>{{ data[album.id].year}}</span>
+    <span>{{ data[album.id].genre }}</span>
     <div>{{ album.rating }}</div>
     <div>{{ album.description }}</div>
   </div>
