@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<style type="text/css">
+  .album-title {
+    font-weight: bold;
+  }
+  .album-title {
+    font-style: italic;
+  }
+</style>
+
+<h1>{{ page.title }}</h1>
+
+{% assign data = site.data | map: page.data_src | first %}
+<section id="albums-list">
+  {% for album in page.list %}
+  <div class="album">
+    <div class="album-header">
+      <span class="album-title">{{ data[album.id].title }}</span>
+      &mdash;
+      <span class="album-artist">{{ data[album.id].artist }}</span>
+      <span class="album-year">({{ data[album.id].year }})</span>
+    </div>
+    <div class="album-info">
+      <div class="album-rating">
+        <span class="album-rating-label">Rating: </span><span>{{ album.rating }}
+      </div>
+      <div class="album-description"><p>{{ album.description }}</p></div>
+    </div>
+  </div>
+  {% endfor %}
+</section>
