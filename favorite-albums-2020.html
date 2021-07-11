@@ -6,17 +6,17 @@ title: Favorite Albums From 2020
 
 <div>
   {% assign album = site.music_albums[1] %}
-  <span>{{ .artist }}</span>
-  <span>{{ album.album }}</span>
+  <span>{{ album.artist }}</span>
+  <span>{{ album.title }}</span>
   <span>{{ album.year }}</span>
-  <span>{{ album.rating }}</span>
+  <span>{{ album.genre }}</span>
 </div>
 <div>
   {% assign album = site.music_albums[2] %}
   <span>{{ album.artist }}</span>
-  <span>{{ album.album }}</span>
+  <span>{{ album.title }}</span>
   <span>{{ album.year }}</span>
-  <span>{{ album.rating }}</span>
+  <span>{{ album.genre }}</span>
 </div>
 
 </section>

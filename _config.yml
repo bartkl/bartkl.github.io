@@ -3,3 +3,5 @@ highlighter: rouge
 kramdown:
   syntax_highlighter: pygments
 collections_dir: collections
+collections:
+  - music_albums
