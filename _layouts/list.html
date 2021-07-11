@@ -7,16 +7,16 @@ layout: default
 <h1>{{ page.title }}</h1>
 
 Je moeder.23
-{% assign data = site.data | map: page.data %}
-{{ data | inspect }}
+{% assign d = site.data | map: page.data_src %}
+{{ d | inspect }}
 <section id="list">
   {% for album in page.list %}
   <div>
     {{ album | inspect }}
     {{ album.nr }}
-    <span>{{ data[album.nr].title }}</span>
-    <span>{{ data[album.nr].year}}</span>
-    <span>{{ data[album.nr].genre }}</span>
+    <span>{{ d[album.nr].title }}</span>
+    <span>{{ d[album.nr].year}}</span>
+    <span>{{ d[album.nr].genre }}</span>
     <div>{{ album.rating }}</div>
     <div>{{ album.description }}</div>
   </div>

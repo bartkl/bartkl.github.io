@@ -1,7 +1,7 @@
 ---
 title: Favorite Albums From 2020
 layout: list
-data: music_albums
+data_src: music_albums
 
 list:
   - nr: 01
