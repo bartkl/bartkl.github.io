@@ -15,6 +15,7 @@ layout: default
 <h1>{{ page.title }}</h1>
 
 {% assign data = site.data | map: page.data_src | first %}
+{% site.static_files | inspect %}
 <section id="albums-list">
   {% for album in page.list %}
   <div class="album">
