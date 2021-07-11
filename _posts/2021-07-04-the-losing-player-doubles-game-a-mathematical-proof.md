@@ -2,6 +2,7 @@
 layout: post
 author: Bart
 title: "The Losing Player Doubles Game: A Mathematical Proof"
+mathjax: true
 ---
 
 ## Poker, but not quite
