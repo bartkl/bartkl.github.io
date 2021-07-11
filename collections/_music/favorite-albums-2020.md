@@ -1,9 +1,8 @@
 ---
-data: site.data.music_albums
 title: Favorite Albums From 2020
 layout: list
 
-list:
+albumslist:
   - id: 1
     rating: 5
     description: Lovely.
