@@ -1,7 +1,7 @@
 ---
 title: Favorite Albums From 2020
 layout: list
-data: :site.data.music_albums
+data: music_albums
 
 list:
   - id: 1

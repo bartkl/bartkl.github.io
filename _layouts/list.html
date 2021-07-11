@@ -6,12 +6,13 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
+{% assign data = site.data | map: data %}
 <section id="list">
   {% for album in page.list %}
   <div>
-    <span>{{ page.data[album.id].title }}</span>
-    <span>{{ page.data[album.id].year}}</span>
-    <span>{{ page.data[album.id].genre }}</span>
+    <span>{{ data[album.id].title }}</span>
+    <span>{{ data[album.id].year}}</span>
+    <span>{{ data[album.id].genre }}</span>
     <div>{{ album.rating }}</div>
     <div>{{ album.description }}</div>
   </div>
