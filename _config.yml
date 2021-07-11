@@ -1,7 +1,7 @@
 theme: jekyll-theme-minimal
 highlighter: rouge
 kramdown:
-  syntax_highlighter: pygments
+  syntax_highlighter: rouge
 collections_dir: collections
 collections:
   music:

@@ -9,13 +9,11 @@ layout: default
 <section id="list">
   {% for album in page.list %}
   <div>
-    <div>{{ album.id }}</div>
+    <span>{{ site.music_albums[album.id].title }}</span>
+    <span>{{ site.music_albums[album.id].year}}</span>
+    <span>{{ site.music_albums[album.id].genre }}</span>
     <div>{{ album.rating }}</div>
     <div>{{ album.description }}</div>
-    <!--span>{{ site.music_albums[1].title }}</span>
-    <span>{{ site.music_albums[1].year}}</span>
-    <span>{{ site.music_albums[1].genre }}</span>
-    <span>4</span-->
   </div>
   {% endfor %}
 </section>
