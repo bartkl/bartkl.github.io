@@ -13,10 +13,10 @@ Je moeder.23
   {% for album in page.list %}
   <div>
     {{ album | inspect }}
-    {{ album.nr }}
-    <span>{{ d[album.nr].title }}</span>
-    <span>{{ d[album.nr].year}}</span>
-    <span>{{ d[album.nr].genre }}</span>
+    {{ album.kanker }}
+    <span>{{ d[album.kanker].title }}</span>
+    <span>{{ d[album.kanker].year}}</span>
+    <span>{{ d[album.kanker].genre }}</span>
     <div>{{ album.rating }}</div>
     <div>{{ album.description }}</div>
   </div>
