@@ -18,10 +18,10 @@ layout: default
 <h1>{{ page.title }}</h1>
 
 {% assign data = site.data | map: page.data_src | first %}
-<div class="container">
+<div class="container-md">
   <section id="albums-list">
     {% for album in page.list %}
-    <div class="row gy-4">
+    <div class="row gy-6">
       <div class="col-1">
         {% if ordered %}
           <div class="list-position">#{{ forloop.index }}</div>
