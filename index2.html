@@ -5,6 +5,22 @@ title: bartkl's kanker website
 
 <h2>{{ page.title }}</h2>
 
+<nav id="blog-items">
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <div class="blog-item">
+        <span class="blog-item-prefix">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <span class="blog-item-separator">&mdash;</span>
+        <span class="blog-item-link">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </span>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
+
 <ul>
   <li><a href="/blogs.html">Blogs</a></li>
   <li><a href="/music/favorite-albums-2020">Favorite Albums From 2020</a></li>
