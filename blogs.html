@@ -5,7 +5,7 @@ title: Home
 
 <h1>Blogs</h1>
 
-{% site.posts | inspect %}
+{{ site.posts | inspect }}
 <nav id="blog-items">
   <ul>
     {% for post in site.posts %}
