@@ -46,7 +46,7 @@ layout: default
             <div class="row pt-2">
               <div class="album-info">
                 <div class="album-rating">
-                  {% for i in (1..album.rating) %}★{% endfor %}
+                  {% render "★" for range(1..album.rating) %}
                 </div>
                 <div class="album-description"><p>{{ album.description }}</p></div>
               </div>
