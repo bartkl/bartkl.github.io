@@ -26,7 +26,9 @@ layout: default
     {% for album in page.list %}
     <div class="row">
       <div class="col-1">
-        <div class="list-position">#{{ forloop.index }}</div>
+        {% if ordered %}
+          <div class="list-position">#{{ forloop.index }}</div>
+        {% endif %}
       </div>
       <div class="col-11">
         <div class="row">
