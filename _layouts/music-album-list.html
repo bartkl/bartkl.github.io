@@ -43,10 +43,17 @@ layout: default
                 <span class="album-year">({{ data[album.id].year }})</span>
               </div>
             </div>
-            <div class="row">
+            <div class="row pt-2">
               <div class="album-info">
                 <div class="album-rating">
-                  <span class="album-rating-label">Rating: </span><span>{{ album.rating }}
+                  {% case album.rating %}
+                    {% when 1 %}★
+                    {% when 2 %}★★
+                    {% when 3 %}★★★
+                    {% when 4 %}★★★★
+                    {% when 5 %}★★★★★
+                    {% else %}
+                  {% endcase %}
                 </div>
                 <div class="album-description"><p>{{ album.description }}</p></div>
               </div>
