@@ -15,21 +15,6 @@
     <title>bartkl &mdash; {{ page.title }}</title>
   </head>
   <body>
-  <nav id="blog-items">
-    <ul>
-      {% for post in site.posts %}
-      <li>
-        <div class="blog-item">
-          <span class="blog-item-prefix">{{ post.date | date: "%Y-%m-%d" }}</span>
-          <span class="blog-item-separator">&mdash;</span>
-          <span class="blog-item-link">
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </span>
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
-  </nav>
     {{ content }}
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
