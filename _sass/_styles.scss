@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Playfair Display Regular';
-  src: url('assets/fonts/PlayfairDisplay-VariableFont_wght.ttf');
+  src: url('{{ "assets/fonts/PlayfairDisplay-VariableFont_wght.ttf" | relative_url }}');
 }
 
 body {
