@@ -2,7 +2,7 @@
 title: Favorite Albums From 2020
 layout: music-album-list
 data_src: music_albums
-ordered: true
+ordered: false
 
 list:
   - id: 1

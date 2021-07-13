@@ -22,13 +22,12 @@ The interesting question that remains is:
 
 This is the question I will be answering in this article.
 
-## Defining _The Losing Player Doubles Game_
+## Defining "The Losing Player Doubles Game"
 Games need names, so I've decided to dub this game _The Losing Player Doubles Game_, since every round the player who is behind is the one who wins that round.
 
 First, let's define the game more rigorously. In that process, let's also ditch the poker terminology.
 
-### Definition: _The Losing Player Double Game_ (WIP)
-
+### Definition: "The Losing Player Double Game" (WIP)
 * There are exactly two players at all time in the game.
 * There is a fixed amount of points in the game which never changes, only the distribution among the players changes (it's a zero-sum game).
 * The game ends if and only if one player has \\(0\\) points.
@@ -40,7 +39,7 @@ Note that whenever either of the players has \\(0\\) points, this means that in 
 
 So, here is our revised definition (only the amiguous rule changed, but I'm repeating everything for the sake of explicity):
 
-### Definition: _The Losing Player Double Game_
+### Definition: "The Losing Player Double Game"
 * There are exactly two players at all time in the game.
 * There is a fixed amount of points in the game which never changes, only the distribution across the players changes (it's a zero-sum game).
 * The game ends if and only if both players have the same amount of points.
@@ -131,17 +130,17 @@ If this is indeed true, then we can determine whether our game ends by doing the
 
 It is now time to get to actually proving the conjecture. Warning: things are about to get very mathematical.
 
-## The formalization and proof
+### The formalization and proof
 This is the part where the article gets quite technical. If you have no background in mathematics, it's probably hard to follow along. Definitely feel free to try though. You can get a head start by reading up on _proof by mathematical induction_, which is a technique I'll be using to perform the proof. Also, you may not be familiar with some of the notation, in which case I suggest you read up on _predicate logic_.
 
 First, let's reiterate our conjecture to prove:
 
-### The proposed solution
+#### The proposed solution
 Given coprime \\(x, y > 0\\):
 
 $$(x, y) \text{ is a node in row } n \Leftrightarrow x + y = 2^{n + 1}$$
 
-### Proof.
+#### Proof.
 We will use mathematical induction on \\(n\\).
 
 For \\(n = 0\\), there's only one node, namely \\((1, 1)\\). Therefore, what needs to be proved is:
@@ -197,10 +196,10 @@ p'' + q'' &= p + \frac{q - p}{2} \\
 
 We will use this in the proof ahead. Let's go back to proving the case \\(n + 1\\). There's two directions of implication we need to prove.
 
-#### (\\(\Rightarrow\\))
+##### (\\(\Rightarrow\\))
 If \\((p, q)\\) is a node on row \\(n + 1\\), then \\((p'', q'')\\) is a node on row \\(n\\). Using the induction assumption, that means \\(p'' + q'' = 2^{n + 1}\\). But we know \\(p + q = 2(p'' + q'')\\), so it follows that \\(p + q = 2^{n + 2}\\). This implication holds.
 
-#### (\\(\Leftarrow\\))
+##### (\\(\Leftarrow\\))
 Suppose \\(p + q = 2^{n + 2}\\). Since \\(p'' + q'' = \frac{1}{2} \cdot (p + q)\\), this means \\(p'' + q'' = 2^{n + 1}\\). By the induction hypothesis, this means \\((p'', q'')\\) is in row \\(n\\). But that means the predecessor \\((p, q)\\) is in row \\(n + 1\\). So, this implication holds as well.
 
 Since both directions of the implication hold, we have proven the case for \\(n + 1\\), thereby concluding this proof successfully.
