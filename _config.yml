@@ -1,10 +1,9 @@
-theme: jekyll-theme-minimal
 highlighter: rouge
 kramdown:
   syntax_highlighter: rouge
-collections_dir: collections
+# collections_dir: collections
 
-collections:
-  music:
-    output: true
-    permalink: /:collection/:name
+# collections:
+#   music:
+#     output: true
+#     permalink: /:collection/:name
