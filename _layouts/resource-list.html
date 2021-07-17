@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<div class="container-md">
+  <section id="resource-list">
+    {% for category in page.list %}
+    <div class="row pt-3">
+      <h2>{{ category }}</h2>
+      {% for resource in category %}
+        {% assign half_len = forloop.length | divided_by: 2 %}
+        {% if forloop.index0 | where_exp: "index0 < half_len" %}
+          <div class="col">
+            {{ resource.title }}
+          </div>
+        {% else %}
+          <div class="col">
+            {{ resource.title }}
+          </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </section>
+</div>
