@@ -10,12 +10,16 @@ layout: default
     <div class="row pt-3">
       <h2>{{ category.category }}</h2>
       {% for resource in category.items %}
+        {% assign half_len = forloop.length | divided_by: 2 %}
+        {% if forloop.index0 | at_least: half_len %}
           <div class="col">
             {{ resource.title }}
           </div>
+      {% else %}
           <div class="col">
             {{ resource.title }}
           </div>
+        {% endif %}
       {% endfor %}
     </div>
     {% endfor %}
