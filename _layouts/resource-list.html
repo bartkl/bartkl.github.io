@@ -9,7 +9,7 @@ layout: default
     {% for category in page.list %}
     <div class="row pt-3">
       <h2>{{ category.category }}</h2>
-      {% for resource in category | map: "items" %}
+      {% for resource in category.items %}
           <div class="col">
             {{ resource.title }}
           </div>
