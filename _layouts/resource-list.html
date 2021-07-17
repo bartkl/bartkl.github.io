@@ -7,8 +7,9 @@ layout: default
 <div class="container-md">
   <section id="resource-list">
     {% for category in page.list %}
+      {{ category | inspect }}
     <div class="row pt-3">
-      <h2>{{ category }}</h2>
+      <h2>{{ category.title }}</h2>
       {% for resource in category %}
           <div class="col">
             {{ resource.title }}
