@@ -3,7 +3,7 @@ title: Computer Science
 layout: resource-list
 
 list:
-  talks and lectures:
+  talks_and_lectures:
   - title: The Next Paradigm Shift in Programming
     link: <https://youtu.be/6YbK8o9rZfI>
     author: Richard Feldman
