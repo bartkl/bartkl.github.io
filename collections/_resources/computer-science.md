@@ -43,7 +43,7 @@ list:
       date: 2018
       tags: js
 
-  - category: Vlogs:
+  - category: Vlogs
     items:
     - title: Object Oriented Programming vs Functional Programming
       link: <https://youtu.be/wyABTfR9UTU>
