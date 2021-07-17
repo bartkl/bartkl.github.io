@@ -2,7 +2,7 @@
 title: Computer Science
 layout: resource-list
 
-resources:
+list:
     talks and lectures:
         - title: The Next Paradigm Shift in Programming
           link: https://youtu.be/6YbK8o9rZfI
