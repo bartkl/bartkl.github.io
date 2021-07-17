@@ -7,9 +7,6 @@ collections:
   resources:
     output: true
     permalink: /:collection/:name
-  music:
-    output: true
-    permalink: /:collection/:name
 
 sass:
   sass_dir: _sass

@@ -86,5 +86,4 @@ list:
   - title: Scott Wlaschin
     link: <https://twitter.com/ScottWlaschin>
     tags: fp
-
   ---
