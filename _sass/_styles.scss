@@ -6,14 +6,48 @@ html {
 
 body {
     font-family: "Libre Baskerville", serif;
-    padding: 1em;
+    padding: 1rem;
     line-height: 1.8;
+    width: 100%;
 }
 
 h1 {
     font-weight: 700;
 }
 
-h2 {
+h5 {
     font-weight: 700;
+}
+
+.resource-list-container {
+    width: 80%;
+}
+
+.resource-list-from-category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.resource-list-item {
+    width: 5rem;;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    margin-right: 1.2rem;
+    padding: 0.5rem;
+}
+
+@media (max-width: 576px) {
+    .resource-list-from-category {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .resource-list-item {
+        width: 100%;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+        margin-right: 1.2rem;
+        padding: 0.5rem;
+    }
 }
