@@ -31,7 +31,7 @@ layout: default
         {% endif %}
         {% if resource.tags %}
         Tags:
-        <div class="resource-tags">{{ resource.tags | join: ", " }}</div>
+        <span class="resource-tags">{{ resource.tags | join: ", " }}</span>
         {% endif %}
       </div>
       {% endfor %}
