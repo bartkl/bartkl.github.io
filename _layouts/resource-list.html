@@ -3,27 +3,35 @@ layout: default
 ---
 
 <style type="text/css">
-  h5 {
-    font-weight: 700;
+  .resource-list-from-category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 </style>
 
 <h1>{{ page.title }}</h1>
 
-<div class="container-md">
+<div class="resource-list-container">
   <section id="resource-list">
-    {% for category in page.list %}
-    <div class="row pt-3">
-      <h3>{{ category.category }}</h3>
-      {% for resource in category.items %}
-        <div class="col">
+    {% for resources in page.list %}
+    <div class="resource-list-from-category">
+      <h2>{{ resources.category }}</h2>
+      {% for resource in resources.items %}
+      <div class="resource-list-item">
+        <div class="resource-title">
           <h5>{{ resource.title }}</h5>
-          <div>
-            <span class="author">{{ resource.author }}</span> &mdash; <span class="date">{{ resource.date }}</span>
-          </div>
-          <div><a href="{{ resource.link }}">{{ resource.link }}</a></div>
-          <div>Tags: {{ resource.tags }}</div>
         </div>
+        <div class="resource-author-and-date">
+          <span class="author">{{ resource.author }}</span>
+          &mdash;
+          <span class="date">{{ resource.date }}</span>
+        </div>
+        <div class="resource-link">
+          <a href="{{ resource.link }}">{{ resource.link }}</a>
+        </div>
+        <div class="resource-tags">Tags: {{ resource.tags }}</div>
+      </div>
       {% endfor %}
     </div>
     {% endfor %}

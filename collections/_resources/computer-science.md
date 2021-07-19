@@ -20,7 +20,7 @@ list:
     - title: Don't Fear the Monad
       link: https://youtu.be/ZhuHCtR3xq8
       author: Brian Beckman
-      date: 2021-11-21
+      date: 2012-11-20
       tags: fp
 
     - title: "Source Decoded 3: Javascript -- Prototypes, Prototypal Inheritance done right."
