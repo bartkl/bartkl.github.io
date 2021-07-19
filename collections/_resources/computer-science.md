@@ -16,7 +16,7 @@ list:
       link: https://youtu.be/srQt1NAHYC0
       date: 2017-09-25
       author: Scott Wlaschin
-      tags:cw
+      tags:
       - fp
 
     - title: Don't Fear the Monad
@@ -93,13 +93,17 @@ list:
       link:
       - https://doughellmann.com
       - https://twitter.com/doughellmann
-      tags: python
+      tags:
+      - python
 
     - title: Richard Feldman
       link: https://twitter.com/rtfeldman
-      tags: fp elm
+      tags:
+      - fp
+      - elm
 
     - title: Scott Wlaschin
       link: https://twitter.com/ScottWlaschin
-      tags: fp
+      tags:
+      - fp
 ---
