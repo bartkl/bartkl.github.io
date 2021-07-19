@@ -3,12 +3,16 @@ layout: default
 ---
 
 <style type="text/css">
+  .resource-list-container {
+    width: 70%;
+  }
   .resource-list-from-category {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
   .resource-list-item {
+    width: 33%;
     margin-top: 1.2em;
     margin-right: 1.2em;
     padding: 0.5em;
@@ -17,12 +21,10 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
-<div class="resource-list-container container">
+<div class="resource-list-container">
   <section id="resource-list">
     {% for resources in page.list %}
-    <div class="row">
-      <h2>{{ resources.category }}</h2>
-    </div>
+    <h2>{{ resources.category }}</h2>
     <div class="resource-list-from-category row">
       {% for resource in resources.items %}
       <div class="resource-list-item">
