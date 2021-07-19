@@ -8,15 +8,22 @@ layout: default
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .resource-list-item {
+    margin-top: 1.2em;
+    margin-right: 1.2em;
+    padding: 0.5em;
+  }
 </style>
 
 <h1>{{ page.title }}</h1>
 
-<div class="resource-list-container">
+<div class="resource-list-container container">
   <section id="resource-list">
     {% for resources in page.list %}
-    <h2>{{ resources.category }}</h2>
-    <div class="resource-list-from-category">
+    <div class="row">
+      <h2>{{ resources.category }}</h2>
+    </div>
+    <div class="resource-list-from-category row">
       {% for resource in resources.items %}
       <div class="resource-list-item">
         <div class="resource-title">
