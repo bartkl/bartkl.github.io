@@ -15,8 +15,8 @@ layout: default
 <div class="resource-list-container">
   <section id="resource-list">
     {% for resources in page.list %}
+    <h2>{{ resources.category }}</h2>
     <div class="resource-list-from-category">
-      <h2>{{ resources.category }}</h2>
       {% for resource in resources.items %}
       <div class="resource-list-item">
         <div class="resource-title">
