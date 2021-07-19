@@ -35,6 +35,8 @@ h5 {
     margin-bottom: 1.2rem;
     margin-right: 1.2rem;
     padding: 0.5rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 @media (max-width: 576px) {
