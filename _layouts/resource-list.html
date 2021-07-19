@@ -19,13 +19,23 @@ layout: default
         </div>
         <div class="resource-author-and-date">
           <span class="author">{{ resource.author }}</span>
-          &mdash;
-          <span class="date">{{ resource.date }}</span>
+          {% if resource.date %}
+            &mdash;
+            <span class="date">{{ resource.date }}</span>
+          {% endif %}
         </div>
+        {% if resource.link %}
         <div class="resource-link">
           <a href="{{ resource.link }}">{{ resource.link }}</a>
         </div>
-        <div class="resource-tags">Tags: {{ resource.tags }}</div>
+        {% endif %}
+        {% if resource.tags %}
+        <div class="resource-tags">Tags:
+          {% for tag in resource.tags %}
+          <span class="resource-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
       </div>
       {% endfor %}
     </div>
