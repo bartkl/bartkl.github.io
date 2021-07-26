@@ -10,6 +10,9 @@ collections:
   music:
     output: true
     permalink: /:collection/:name
+  org:
+    output: true
+    permalink: /:collection/:name
 
 sass:
   sass_dir: _sass
