@@ -14,11 +14,11 @@ For example, suppose Alice has \\(100\\) chips, and Bob has \\(200\\). Since Ali
 
 So, immediately, this example proves:
 
-> Not all games terminate.
+> Some games do not terminate.
 
 The interesting question that remains is:
 
-> Under what conditions does the game terminate?
+> Under what conditions do games terminate?
 
 That's the question I will be answering in this article.
 
@@ -46,33 +46,31 @@ Now, either both players have an equal amount of points, in which case the game 
 This definition is informal, but it suffices.
 
 ## Playing Around
-Whenever you're dealing with a problem like this, it's a good idea to fiddle around with some examples. Earlier, we saw an example of a scenario which led to a game that never terminates. If you like to, try out examples of your own: which games terminate and which ones don't? Can you identify any properties or patterns? Here's an example of a game that does terminate: Alice has \\(300\\) points, and Bob has \\(500\\). In the next round they'll have \\(600\\) and \\(200\\) points respectively, and then both will have \\(400\\) points, and thus the game ends.
+Whenever you're dealing with a problem like this, it's a good idea to fiddle around with some examples. Earlier, we saw an example of a scenario which led to a game that never terminates. If you like to, try out examples of your own: which games terminate and which ones don't? Can you identify any properties or patterns? Here's an example of a game that does terminate: Alice has \\(300\\) points, and Bob has \\(500\\). In the next round they'll have \\(600\\) and \\(200\\) points respectively, and then both will have \\(400\\) points, and thus the game terminates.
 
 So yeah, I told you exploring examples is a good idea, and it is, but I doubt it will lead you to the discovery of the answer to this problem. If you can prove me otherwise though, make sure to share that with me!
 
 We need to approach this more methodically.
 
-## Getting methodical
-Given a certain round in which the game has not ended yet, one player has fewer points and therefore will double his amount of points. There's no other way the game can possibly proceed, so the game is clearly deterministic.
-
-There's also something to be said about the reverse direction: any round is the successor of exactly two possible preceding rounds, each of which corresponds to a different player having doubled his points since. For example, if Alice has \\(200\\) points, and Bob has \\(400\\), there's two possible rounds that could have preceded this one, one in which Alice was the one who doubled her points, in which case she had \\(100\\) points and Bob had \\(500\\), and one in which Bob was the one who doubled his points, meaning he had \\(200\\) while Alice had \\(400\\).
+## Getting Methodical
+As is quite clear, this game is deterministic: each round the game can advance in precisely one way. Or, to put in another way, any round is the successor of exactly two possible preceding rounds, each of which corresponds to a different player having doubled their points since. For example, if Alice has \\(200\\) points, and Bob has \\(400\\), there's two possible rounds that could have preceded this one, one in which Alice was the one who doubled her points, in which case she had \\(100\\) points and Bob had \\(500\\), and one in which Bob was the one who doubled his points, meaning he had \\(200\\) while Alice had \\(400\\).
 
 Due to these deterministic properties, you can do something very clever:
 
-> Start with a game you know will end, and from there, backtrack all possible preceding rounds.
+> **Start with a game you know will terminate, and from there, backtrack all possible preceding rounds.**
 
 Let's explore.
 
 ### The binary tree
-A nice way to visually represent the possible rounds in games that (eventually) end, is a _binary tree_. Before I elaborate on that any further though, let's first make some more observations.
+A nice way to visually represent the possible rounds in games that (eventually) terminate is a _binary tree_. Before I elaborate on that any further though, let's first make some more observations.
 
-Firstly, what really matters in these games is not the actual amounts of points the players have, or even the absolute total. What matters are the ratios of point distribution among players. For example, whether both players have \\(100\\) points or just \\(1\\) is irrelevant. In both cases there's a \\(1:1\\) ratio, which is what matters.
+Firstly, what really matters in these games is not the actual amounts of points the players have, or even the absolute total. What matters are the ratios of the point distribution among the players. For example, whether both players have \\(100\\) points or just \\(1\\) is irrelevant. In both cases there's a \\(1:1\\) ratio, which is what matters.
 
-Looking at it this way, we can normalize all possible ratios such that all common divisors are factored out (essentially diving by the _greatest common divisor_), leaving a single representative pair. The pair \\((1, 3)\\) will represent the ratios \\(1:3\\), \\(20:60\\), and so on. From now on, I will refer to this as _coprime normalization_.
+Looking at it this way, we can normalize all possible ratios by dividing by all common divisors (essentially diving by the greatest common divisor), leaving a single representative pair. The pair \\((1, 3)\\) will represent the ratios \\(1:3\\), \\(20:60\\), and so on.
 
 So, any round can now be represented by a single pair of numbers which are coprime (i.e. don't share any divisors). It's time to build our tree.
 
-Recall that backtracking from a given round leads to exactly two preceding rounds that could have happened. This is why the binary tree is a perfect visualization. On row \\(0\\), we have the root node \\((1,1)\\), which means the game has ended. On row \\(1\\), there's two child nodes which each represent a possible preceding round. And so forth.
+Recall that backtracking from a given round leads to exactly two preceding rounds that could have happened. This is why the binary tree is a perfect visualization. On row \\(0\\), we have the root node \\((1,1)\\), which means the game has terminated. On row \\(1\\), there's two child nodes which each represent a possible preceding round. And so forth.
 
 Here's part of the beginning of the tree:
 
@@ -80,15 +78,18 @@ Here's part of the beginning of the tree:
 
 Some observations and conventions:
 
-- The tree is mirrored over the \\(y\\) axis, and we can consider only one half without losing any generality, since it's irrelevant for our purposes whether Alice has (for example) \\(100\\) points and Bob has \\(200\\), or vice versa.
-- The rows are numbered, starting with row \\(0\\). This will come in handy later.
+- Every row represents a round in the game. The rows are numbered, starting with row \\(0\\).
+- Note: since we're backtracking, row \\(n + 1\\) is the round _before_ row \\(n\\).
+- Every node in a row represents a possible state of the game, i.e. a distribution of points among the two players for a specific round.
 - For any node \\((x, y)\\) we will say that the \\(x\\) parts belong to player \\(1\\), and the other \\(y\\) parts to player \\(2\\).
-- Since we're backtracking, row \\(n + 1\\) is the round _before_ row \\(n\\).
+- The tree is mirrored over the \\(y\\) axis, since we can consider only one half without losing any generality. It's irrelevant for our purposes whether Alice has (for example) \\(100\\) points and Bob has \\(200\\), or vice versa.
 
-It might not be immediately obvious how to derive the pairs in the tree. Let's do an example to demonstrate how you can go about it. In row \\(1\\) we have the node \\((1, 3)\\). Let's determine the possible preceding rounds. First, note that \\((1, 3)\\) is equivalent with a ratio of \\(2:6\\). This will make the arithmetic easier. So, either:
+It might not be immediately obvious how to derive the pairs in the tree. Let's work out an example to demonstrate how you can go about this.
 
-1. Player \\(1\\) doubled his points in the last round, in which case they used to have \\(1\\) part, meaning player \\(2\\) must have lost one part, meaning they had \\(7\\) parts. So, this corresponds to the node \\((1, 7)\\). Note that these numbers are coprime, and don't need further normalization.
-2. Player \\(2\\) doubled his points, so they had \\(3\\) parts, and player \\(1\\) must have had \\(5\\) parts. This corresponds with the node \\((5, 3)\\).
+In row \\(1\\) we have the node \\((1, 3)\\). Let's determine the possible preceding rounds. First, note that \\((1, 3)\\) is equivalent with a ratio of \\(2:6\\). This will make the arithmetic easier. So, either:
+
+1. Player \\(1\\) doubled their points in the last round, in which case they used to have \\(1\\) part, meaning player \\(2\\) must have lost one part, meaning they had \\(7\\) parts. So, this corresponds to the node \\((1, 7)\\). Note that these numbers are coprime, and don't need further normalization.
+2. Player \\(2\\) doubled their points, so they had \\(3\\) parts, and player \\(1\\) must have had \\(5\\) parts. This corresponds with the node \\((5, 3)\\).
 
 Now that we have a neat visualization, it's time to solve the puzzle.
 
