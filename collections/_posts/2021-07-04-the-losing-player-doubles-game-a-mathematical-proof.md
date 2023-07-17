@@ -5,52 +5,48 @@ title: "The Losing Player Doubles Game: A Mathematical Proof"
 mathjax: true
 ---
 
-## Poker, but not quite
-Back in the day I used to play poker with friends, and at some point when two people were left playing each other, I wondered:
+## Poker, Although Not Quite
+When I was younger, I used to play poker with friends. At some point, probably when two finalists were taking turns going all-in, I stumbled upon an interesting question:
 
-> What would happen if both players keep going all-in, and each round the person with the least value in chips wins?
+> Consider the situation of a two-player game where both players keep going all-in. Suppose now that every round the playe with the fewest amount of chips wins. Does this game risk going on indefinitely and if so, under what conditions is this the case?
 
-For example, let's say Alice has \\(100\\) value in chips, and Bob has \\(200\\). That means Alice wins, and doubles to \\(200\\), meaning Bob loses \\(100\\) to her leaving him with \\(100\\). This time, Bob is the poor man, meaning he doubles his points to \\(200\\), and Alice ends up with \\(100\\). I think it's clear what's going on here: Alice and Bob will keep going back and forth this way, i.e. the game will be stuck in this cycle, meaning it will not end.
+For example, suppose Alice has \\(100\\) chips, and Bob has \\(200\\). Since Alice has less, she wins, so she doubles her amount of chips to \\(200\\), meaning Bob loses \\(100\\) chips, leaving him with \\(100\\). This time, Bob is the one with less chips, so now it is he who doubles his chips to \\(200\\), and Alice ends up with \\(100\\). I think it's clear what's going on here: Alice and Bob will keep going back and forth this way, i.e. this game will never terminate.
 
-Immediately, this example proves:
+So, immediately, this example proves:
 
-> Not all games end.
+> Not all games terminate.
 
 The interesting question that remains is:
 
-> Under what conditions does the game end?
+> Under what conditions does the game terminate?
 
-This is the question I will be answering in this article.
+That's the question I will be answering in this article.
 
-## Defining "The Losing Player Doubles Game"
-Games need names, so I've decided to dub this game _The Losing Player Doubles Game_, since every round the player who is behind is the one who wins that round.
+## Defining the game
+Of course this derived deterministic mini-game has little to do with poker (but it is a great excuse for some fun mathematical problem solving). Games need names, so I've decided to dub this game _Loser Doubles_, since every round the player who is behind (the "loser") is the one who wins that round and then doubles their amount of chips.
 
-First, let's define the game more rigorously. In that process, let's also ditch the poker terminology.
+First, let's define the game more rigorously, ditching the poker terminology as well.
 
-### Definition: "The Losing Player Double Game" (WIP)
-* There are exactly two players at all time in the game.
-* There is a fixed amount of points in the game which never changes, only the distribution among the players changes (it's a zero-sum game).
-* The game ends if and only if one player has \\(0\\) points.
-* Every round, the player with the least amount of points receives that amount of points from the other player.
+* There are exactly two players in this game. At no point during the game does this change.
+* Each player has points, the amount of which will vary per round.
+* The total amount of points in the game is fixed (never changes), only the distribution among the players changes (it's a zero-sum game).
+* Each round the player with the least amount of points wins that round, meaning they receive that amount of points from the other player.
+* The game terminates if and only if one player has \\(0\\) points.
 
-The astute reader might realize there's a problem with our definition: what if the two players have the same amount of points? Then the expression "the player with the least amount of points" is ambiguous. Now, although we have to solve this, it's a really trivial detail we cannot be bothered with. Ultimately, this game is no fun anyways, so who wins doesn't matter. What we're interested in is whether the game ends. Let's fix this.
+The astute reader might realize there's a problem with our definition: what if the players have the same amount of points? Then it would be ambiguous who wins. Luckily for us this game is so boring that nobody cares who wins. We only care under which conditions the game terminates.
 
-Note that whenever either of the players has \\(0\\) points, this means that in the previous round both of them must have had an equal amount of points. Make sure you convince yourself of the fact that this is _necessarily_ the case. What follows from this is the knowledge that whenever (and only then) the two players get an equal amount of points, the game will end, and we can discard the ambiguity involved in _how_ it will end (i.e.: _who_ will win).
+Note that whenever either of the players has \\(0\\) points, this means that in the previous round both of them must have had an equal amount of points. Make sure you convince yourself of the fact that this is _necessarily_ the case. What follows from this is the knowledge that whenever (and only then) the two players get an equal amount of points, the game will terminate, and we can discard the ambiguity involved in _how_ it will end (i.e. _who_ will win).
 
-So, here is our revised definition (only the amiguous rule changed, but I'm repeating everything for the sake of explicity):
+Let's amend the game's termination condition to escape the aforementioned ambiguity:
 
-### Definition: "The Losing Player Double Game"
-* There are exactly two players at all time in the game.
-* There is a fixed amount of points in the game which never changes, only the distribution across the players changes (it's a zero-sum game).
-* The game ends if and only if both players have the same amount of points.
-* Every round, the player with the least amount of points receives that amount of points from the other player.
+* The game terminates if and only if both players have the same amount of points.
 
-This time, either both players have an equal amount of points, meaning the game will end, or one has less points than the other, meaning we have well-defined behavior for advancing our game.
+Now, either both players have an equal amount of points, in which case the game will terminate, or one player has less points than the other, in which case we can advance our game another round. This time it seems we have well-defined behavior for our game.
 
-Of course this definition is not very formal, but it suffices. Later, when we use mathematical techniques to proof some of our assertions, we will definitely formalize more.
+This definition is informal, but it suffices.
 
-## Playing around with the game
-Whenever you're dealing with a problem like this, it's a good idea to fiddle around with some examples. Earlier, we saw an example of a scenario which led to a game that never ends. If you like to, try out examples of your own. Which games end and which ones don't? Can you identify any properties or patterns? Here's an example of a game that does end: Alice has \\(300\\) points, and Bob has \\(500\\). In the next round they'll have \\(600\\) and \\(200\\) points respectively, and then both will have \\(400\\) points, and thus the game ends.
+## Playing Around
+Whenever you're dealing with a problem like this, it's a good idea to fiddle around with some examples. Earlier, we saw an example of a scenario which led to a game that never terminates. If you like to, try out examples of your own: which games terminate and which ones don't? Can you identify any properties or patterns? Here's an example of a game that does terminate: Alice has \\(300\\) points, and Bob has \\(500\\). In the next round they'll have \\(600\\) and \\(200\\) points respectively, and then both will have \\(400\\) points, and thus the game ends.
 
 So yeah, I told you exploring examples is a good idea, and it is, but I doubt it will lead you to the discovery of the answer to this problem. If you can prove me otherwise though, make sure to share that with me!
 
