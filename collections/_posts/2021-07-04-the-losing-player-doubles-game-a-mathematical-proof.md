@@ -22,7 +22,7 @@ The interesting question that remains is:
 
 That's the question I will be answering in this article.
 
-## Defining the game
+## Defining the Game
 Of course this derived deterministic mini-game has little to do with poker (but it is a great excuse for some fun mathematical problem solving). Games need names, so I've decided to dub this game _Loser Doubles_, since every round the player who is behind (the "loser") is the one who wins that round and then doubles their amount of chips.
 
 First, let's define the game more rigorously, ditching the poker terminology as well.
@@ -116,26 +116,26 @@ Anyways, how does this help us? It doesn't immediately. However, if its reverse 
 
 For those unfamiliar with the double arrow symbol: it means "if and only if", basically signifying logical equivalence between both sides, i.e. the left hand side implies the right hand side and vice versa.
 
-If this is indeed true, then we can determine whether our game ends by doing the following:
+If this is indeed true, then we can determine whether our game terminates as follows:
 
 1. Take the point counts of each player and divide them by the greatest common divisor. This way, all common divisors are factored out, and you end up with a coprime normalized pair.
 2. Add the obtained coprime numbers.
     - If they add up to some power of \\(2\\), this game will end.
     - Otherwise, the game will not end.
 
-It is now time to get to actually proving the conjecture. Warning: things are about to get very mathematical.
+It is now time to get to actually proving the conjecture.
 
-### The formalization and proof
+### The Formal Proof
 This is the part where the article gets quite technical. If you have no background in mathematics, it's probably hard to follow along. Definitely feel free to try though. You can get a head start by reading up on _proof by mathematical induction_, which is a technique I'll be using to perform the proof. Also, you may not be familiar with some of the notation, in which case I suggest you read up on _predicate logic_.
 
 First, let's reiterate our conjecture to prove:
 
-#### The proposed solution
+#### The Proposed Solution
 Given coprime \\(x, y > 0\\):
 
 $$(x, y) \text{ is a node in row } n \Leftrightarrow x + y = 2^{n + 1}$$
 
-#### Proof.
+#### Proof
 We will use mathematical induction on \\(n\\).
 
 For \\(n = 0\\), there's only one node, namely \\((1, 1)\\). Therefore, what needs to be proved is:
