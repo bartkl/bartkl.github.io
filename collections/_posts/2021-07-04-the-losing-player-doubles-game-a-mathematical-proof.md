@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Bart
-title: "The Losing Player Doubles Game: A Mathematical Proof"
+title: "The Loser Doubles Game: A Mathematical Proof"
 mathjax: true
 ---
 
@@ -23,7 +23,7 @@ The interesting question that remains is:
 That's the question I will be answering in this article.
 
 ## Defining the Game
-Of course this derived deterministic mini-game has little to do with poker (but it is a great excuse for some fun mathematical problem solving). Games need names, so I've decided to dub this game _Loser Doubles_, since every round the player who is behind (the "loser") is the one who wins that round and then doubles their amount of chips.
+Of course this derived deterministic mini-game has little to do with poker (but it is a great excuse for some fun mathematical problem solving). Games need names, so I've decided to dub this game _The Loser Doubles_, since every round the player who is behind (the "loser") is the one who wins that round and then doubles their amount of chips.
 
 First, let's define the game more rigorously, ditching the poker terminology as well.
 
