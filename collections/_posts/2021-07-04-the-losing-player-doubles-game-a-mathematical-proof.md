@@ -55,13 +55,13 @@ We need to approach this more methodically.
 ## Getting Methodical
 As is quite clear, this game is deterministic: each round the game can advance in precisely one way. Or, to put in another way, any round is the successor of exactly two possible preceding rounds, each of which corresponds to a different player having doubled their points since. For example, if Alice has \\(200\\) points, and Bob has \\(400\\), there's two possible rounds that could have preceded this one, one in which Alice was the one who doubled her points, in which case she had \\(100\\) points and Bob had \\(500\\), and one in which Bob was the one who doubled his points, meaning he had \\(200\\) while Alice had \\(400\\).
 
-Due to these deterministic properties, you can do something very clever:
+Due to these deterministic properties, you can do something clever:
 
 > **Start with a game you know will terminate, and from there, backtrack all possible preceding rounds.**
 
 Let's explore.
 
-### The binary tree
+### The Binary Tree
 A nice way to visually represent the possible rounds in games that (eventually) terminate is a _binary tree_. Before I elaborate on that any further though, let's first make some more observations.
 
 Firstly, what really matters in these games is not the actual amounts of points the players have, or even the absolute total. What matters are the ratios of the point distribution among the players. For example, whether both players have \\(100\\) points or just \\(1\\) is irrelevant. In both cases there's a \\(1:1\\) ratio, which is what matters.
@@ -93,18 +93,16 @@ In row \\(1\\) we have the node \\((1, 3)\\). Let's determine the possible prece
 
 Now that we have a neat visualization, it's time to solve the puzzle.
 
-## The solution
-The binary tree we just built enables us to come up with a hypothesis quite easily.
+## The Solution
+The binary tree we just constructed enables us to come up with a hypothesis quite easily.
 
-The root node \\((1, 1)\\) represents (and is the only node doing so) an ending game. A game ends, if and only if, the points ratio corresponds to this node.
-
-Then, from there, we can indefinitely carry on the recursive generation of  _all_ possible preceding ratios between the players' points. This means that by definition, this tree covers the entire set of (coprime normalized) ratios (and nothing else). Put differently:
+The root node \\((1, 1)\\) represents (and is the only node doing so) a terminating game. A game terminates if and only if the points ratio corresponds to this node. Then, from there, we can indefinitely carry on the recursive generation of _all_ possible preceding ratios between the players' points. This means that by definition, this tree covers the entire set of coprime normalized ratios (and nothing else). Put differently:
 
 > If the players have points with a ratio corresponding to some node in this tree, the game will ultimately end. Reversely, if the ratio does not correspond to any node on the tree, the game will not end.
 
-Okay, that's nice, but: given some point counts for both players, how can I tell whether the ratio corresponds with a node on the tree?
+All that remains then is the question: how can I tell whether the ratio of certain game state corresponds with a node on the tree?
 
-### The pattern
+### The Pattern
 To answer that question, it would help if we could identify some property that holds for every node in the tree. And we're in luck, because it's not very hard to see:
 
 > Given some row \\(n\\) of the tree, it holds that for every node \\((x, y)\\) in that row, we have \\(x + y = 2^{n + 1}\\).
