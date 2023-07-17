@@ -126,9 +126,9 @@ If this is indeed true, then we can determine whether our game terminates as fol
 It is now time to get to actually proving the conjecture.
 
 ### The Formal Proof
-This is the part where the article gets quite technical. If you have no background in mathematics, it's probably hard to follow along. Definitely feel free to try though. You can get a head start by reading up on _proof by mathematical induction_, which is a technique I'll be using to perform the proof. Also, you may not be familiar with some of the notation, in which case I suggest you read up on _predicate logic_.
+This is the part where the article gets quite technical. If you have no background in mathematics, it's probably hard to follow along. Definitely feel free to try though.
 
-First, let's reiterate our conjecture to prove:
+First, let's reiterate our conjecture:
 
 #### The Proposed Solution
 Given coprime \\(x, y > 0\\):
@@ -144,7 +144,7 @@ $$(1, 1) \text{ is a node in row } 0 \Leftrightarrow 1 + 1 = 2^{0 + 1}$$
 
 This is trivially true.
 
-Now, assume the hypothesis holds for all \\(n\\). We will now show that then, it also holds for \\(n + 1\\).
+Then, assume the hypothesis holds for all \\(n\\). We will now show that then, it also holds for \\(n + 1\\).
 
 Let \\(p, q > 0\\) be coprimes. Without loss of generality, we can assume \\(p < q\\). Let's apply the rules to advance the game to the next round. Afterwards, we'll expose a relationship between the sums of the parts of subsequent rounds:
 
@@ -160,7 +160,7 @@ p'' &= p \\
 q'' &= \frac{q - p}{2}
 \end{aligned}$$
 
-This pair \\(p'', q''\\) is coprime, making it the normalized form representing the next round. I will prove this right now using a proof from contradiction.
+First let's prove that the pair \\(p'', q''\\) is coprime. I will prove this using a proof from contradiction.
 
 Suppose \\(p'', q''\\) are not coprime. Then:
 
@@ -179,9 +179,9 @@ q &= r(k + 2l) \\
 r &| q
 \end{aligned}$$
 
-So, we have a common divisor \\(r\\) between \\(p\\) and \\(q\\), which contradicts the fact that they are coprime. Therefore, our assumption that \\(p'', q''\\) are not coprime must be wrong, and the conclusion is that they are coprime.
+We have a common divisor \\(r\\) between \\(p\\) and \\(q\\), which contradicts the fact that they are coprime. Therefore, our assumption that \\(p'', q''\\) are not coprime must be wrong, and the conclusion is that they are coprime.
 
-Finally, we can then relate the sums of \\(p, q\\) and \\(p'', q''\\):
+Since \\(p''\\) and \\(q''\\) are coprime, they are the coprime normalized representative pair for the row we just advanced. As promised earlier, let us finally proceed and relate the sums of \\(p, q\\) and \\(p'', q''\\):
 
 $$\begin{aligned}
 p'' + q'' &= p + \frac{q - p}{2} \\
@@ -198,7 +198,3 @@ If \\((p, q)\\) is a node on row \\(n + 1\\), then \\((p'', q'')\\) is a node on
 Suppose \\(p + q = 2^{n + 2}\\). Since \\(p'' + q'' = \frac{1}{2} \cdot (p + q)\\), this means \\(p'' + q'' = 2^{n + 1}\\). By the induction hypothesis, this means \\((p'', q'')\\) is in row \\(n\\). But that means the predecessor \\((p, q)\\) is in row \\(n + 1\\). So, this implication holds as well.
 
 Since both directions of the implication hold, we have proven the case for \\(n + 1\\), thereby concluding this proof successfully.
-
-## Critical notes
-- The tree is not formally defined. This could be done by a recursive definition.
-- Some expressions are vague, like "... we have \\((x, y)\\) as a node on the tree." This is intimately related to the lack of a formal definition of the tree mentioned just now.
