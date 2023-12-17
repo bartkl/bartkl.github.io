@@ -9,8 +9,8 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    baseUrl: "bartkl.github.io/quartz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "bartkl.github.io/gnosis",
+    ignorePatterns: ["private", "templates", ".obsidian", "Excalidraw"],
     defaultDateType: "created",
     theme: {
       typography: {
