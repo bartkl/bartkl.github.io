@@ -10,7 +10,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     baseUrl: "bartkl.github.io/gnosis",
-    ignorePatterns: ["private", "templates", ".obsidian", "Excalidraw"],
+    ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
       typography: {
