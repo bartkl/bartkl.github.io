@@ -1,4 +1,4 @@
-Inspired by the Racket programming language, I came up with the following interesting perspective: what if we regard a data model to be the **language of the domain**?
+Inspired by the [Racket programming language](https://racket-lang.org/), I came up with the following interesting perspective: what if we regard a data model to be the **language of the domain**?
 
 If it is indeed a language, it must have **semantics** and **syntax**.
 ## Syntax
