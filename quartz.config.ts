@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Terminus",
+    pageTitle: "📔 Gnosis",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -20,8 +20,8 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#ffffff",
-          // light: "#faf8f8",
+          // light: "#ffffff",
+          light: "#faf8f8",
           lightgray: "#e5e5e5",
           gray: "#b8b8b8",
           darkgray: "#4e4e4e",

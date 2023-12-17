@@ -7,7 +7,11 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   footer: Component.Footer({
     links: {
-      "LinkedIn": "https://nl.linkedin.com/in/bart-kleijngeld-3a387b146",
+      "👨‍💼": "https://nl.linkedin.com/in/bart-kleijngeld-3a387b146",
+      "🎵": "https://www.last.fm/user/bartkl",
+      "📖": "https://www.goodreads.com/user/show/25204851-bart-kleijngeld",
+      "🎬": "https://mubi.com/en/users/6341306",
+      "👨‍💻": "https://github.com/bartkl",
     },
   }),
 }
@@ -25,9 +29,11 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
+    // Component.RecentNotes({ title: "Recent", limit: 10 }),
     Component.DesktopOnly(Component.Explorer({
-      title: "Gnosis",
-      filterFn: (node) => node.name !== "Excalidraw",
+      title: "/",
+      filterFn: (node) => node.name !== "Excalidraw" && node.name !== "tags",
+      folderDefaultState: "open",
     }))
   ],
   right: [

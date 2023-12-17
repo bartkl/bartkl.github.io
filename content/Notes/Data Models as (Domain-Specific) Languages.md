@@ -1,4 +1,10 @@
-Inspired by the [Racket programming language](https://racket-lang.org/), I came up with the following interesting perspective: what if we regard a data model to be the **language of the domain**?
+---
+tags:
+  - data-modeling
+  - type/blog
+  - programming
+---
+Inspired by how the [Racket programming language](https://racket-lang.org/) holds to the [language-oriented programming](https://beautifulracket.com/appendix/why-lop-why-racket.html) philosophy that each interface could be considered a [domain specific language](https://en.wikipedia.org/wiki/Domain-specific_language) (DSL), I came up with the following interesting perspective: what if we regard a data model to be the **language of the domain**?
 
 If it is indeed a language, it must have **semantics** and **syntax**.
 ## Syntax
@@ -79,5 +85,3 @@ All of this was just a thought. I'm not even sure I'm entirely correct about all
 
 > [!info]
 > By regarding the data model as a language, we immediately recognize the role of the conceptual data model being about semantics, and the role of the logical data model being about syntax. This is a very elegant way to elucidate the difference between the two by mapping them on well-understood formal concepts from language theory.
-
- #data-modeling #type/thought
