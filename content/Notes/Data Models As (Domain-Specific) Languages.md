@@ -4,7 +4,7 @@ tags:
   - type/blog
   - programming
 ---
-Inspired by how the [Racket programming language](https://racket-lang.org/) holds to the [language-oriented programming](https://beautifulracket.com/appendix/why-lop-why-racket.html) philosophy that each interface could be considered a [domain specific language](https://en.wikipedia.org/wiki/Domain-specific_language) (DSL), I came up with the following interesting perspective: what if we regard a data model to be the **language of the domain**?
+Inspired by how the [Racket programming language](https://racket-lang.org/) holds to the [language-oriented programming](https://beautifulracket.com/appendix/why-lop-why-racket.html) philosophy that each interface could be considered a [domain specific language](https://en.wikipedia.org/wiki/Domain-specific_language) (DSL), I came up with the following interesting perspective: what if we regard a data model to be the language of the domain, i.e. as a **domain-specific language**?
 
 If it is indeed a language, it must have **semantics** and **syntax**.
 ## Syntax
@@ -14,7 +14,6 @@ From the perspective of the domain language, malformed data such as when a requi
 
 > [!note]
 > The aspects of the data model that we consider syntactical here corresponds precisely with the notion of a [logical data model](https://en.wikipedia.org/wiki/Logical_schema).
-
 ## Semantics
 Data models also encode the **meaning** of concepts and relations from the (business) domain. Discerning concepts, relating them to one another and decomposing them into attributes that constitute them signifies meaning in the sense that it makes us understand the things that are being modeled.
 
@@ -24,7 +23,6 @@ It is in this way that the concepts and relations between them make up the seman
 
 > [!note]
 > The semantics described in the data model correspond precisely with the notion of a [conceptual data model](https://en.wikipedia.org/wiki/Conceptual_schema).
-
 ## Example
 Let's look at the following Python data model as an example:
 
@@ -66,7 +64,6 @@ True
 ```
 
 Note that the conceptual modeling capabilities in Python are very limited. In a highly expressive language like [OWL](https://www.w3.org/OWL/) or [TypeQL](https://typedb.com/) we could've looked at more interesting examples to do with semantics. This is beyond the scope of this note, however.
-
 ## Metalanguage confusion
 Some might object:
 > You are wrong. To leave out a required field does not constitute a syntax error, but a type error, just like the Python interpreter in the example says.
