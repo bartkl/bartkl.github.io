@@ -1,3 +1,57 @@
+@use "./variables.scss" as *;
 @use "./base.scss";
 
 // put your custom CSS here!
+
+//h1.article-title {
+//  font-size: 2rem;
+//}
+
+.page {
+  @media all and (max-width: $fullPageWidth) {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: $pageWidth;
+  }
+
+  & article {
+    & > h1 {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+// typography improvements
+h1 {
+  font-size: 1.65rem;
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.33rem;
+  margin-top: 1.9rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.12rem;
+  margin-top: 1.62rem;
+  margin-bottom: 1rem;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.transclude {
+  border-left: 0;
+  padding-left: 0rem;
+  ul {
+    padding-left: 1rem;
+  }
+}

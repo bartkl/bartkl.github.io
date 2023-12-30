@@ -3,12 +3,13 @@ tags:
   - data-modeling
   - type/blog
   - programming
+date: 2023-12-18
 ---
-Inspired by how the [Racket programming language](https://racket-lang.org/) holds to the [language-oriented programming](https://beautifulracket.com/appendix/why-lop-why-racket.html) philosophy that each interface could be considered a [domain specific language](https://en.wikipedia.org/wiki/Domain-specific_language) (DSL), I came up with the following interesting perspective: what if we regard a data model to be the language of the domain, i.e. as a **domain-specific language**?
+Inspired by how the [Racket programming language](https://racket-lang.org/) holds to the [language-oriented programming](https://beautifulracket.com/appendix/why-lop-why-racket.html) philosophy that each interface could be considered a [domain-specific language](https://en.wikipedia.org/wiki/Domain-specific_language) (DSL), I came up with the following interesting perspective: what if we regard a data model to be the language of the domain, i.e. as a **domain-specific language**?
 
 If it is indeed a language, it must have **semantics** and **syntax**.
 ## Syntax
-Data models encode *expected usage within the context of application*, e.g. data needs to conform to the structure and constraints on value types, cardinalities, etc. in order to be well-formed. These structural and other types of constraints act as rules which form the syntax of the language that is the data model.
+Data models encode *expected usage within the context of application*, e.g. data needs to conform to the structure and constraints on value types, cardinalities, etc. defined in the model in order to be well-formed. These structural and other types of constraints act as rules which form the syntax of the language that is the data model.
 
 From the perspective of the domain language, malformed data such as when a required field is left out or a wrong data type, is a syntactical error since it is not of the expected [shape](https://www.w3.org/TR/shacl/#constraints-section).
 
@@ -22,7 +23,7 @@ For example, a subclass relationship teaches me that if someone is an employee, 
 It is in this way that the concepts and relations between them make up the semantics of the domain language.
 
 > [!note]
-> The semantics described in the data model correspond precisely with the notion of a [conceptual data model](https://en.wikipedia.org/wiki/Conceptual_schema).
+> The semantics described in the data model correspond precisely with the notion of a [[Conceptual Data Model|conceptual data model]].
 ## Example
 Let's look at the following Python data model as an example:
 
