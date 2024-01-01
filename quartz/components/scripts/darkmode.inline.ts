@@ -1,6 +1,6 @@
-import { renderExcalidrawLinks } from "./util"
-const userPref = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"
-const currentTheme = localStorage.getItem("theme") ?? userPref
+import { getUserPreferredColorScheme, renderExcalidrawLinks } from "./util"
+
+const currentTheme = localStorage.getItem("theme") ?? getUserPreferredColorScheme()
 document.documentElement.setAttribute("saved-theme", currentTheme)
 
 document.addEventListener("nav", () => {

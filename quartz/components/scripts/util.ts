@@ -35,10 +35,13 @@ export function renderExcalidrawLinks(theme: "dark" | "light") {
   })
 }
 
+export function getUserPreferredColorScheme() {
+  return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"
+}
+
 // Have SVG images in the article adhere to the correct color scheme.
 document.addEventListener("nav", (e) => {
-  let theme = localStorage.getItem("theme")
-
+  let theme = localStorage.getItem("theme") ?? getUserPreferredColorScheme()
   Object.values(document.getElementsByTagName("article")[0]
                         .getElementsByTagName("a")).forEach(a => {
     if (a.href.endsWith(".excalidraw")) {
