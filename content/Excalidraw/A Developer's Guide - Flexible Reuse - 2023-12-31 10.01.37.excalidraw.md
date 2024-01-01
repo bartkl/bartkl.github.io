@@ -317,8 +317,8 @@ can't ignore required field ^M0WaKvpF
 		},
 		{
 			"type": "arrow",
-			"version": 265,
-			"versionNonce": 700520179,
+			"version": 266,
+			"versionNonce": 303273360,
 			"isDeleted": false,
 			"id": "Z67AO692tAIDg7VdE6Mkt",
 			"fillStyle": "hachure",
@@ -345,7 +345,7 @@ can't ignore required field ^M0WaKvpF
 					"id": "EK2SgnDe"
 				}
 			],
-			"updated": 1704013781692,
+			"updated": 1704137622554,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -356,7 +356,7 @@ can't ignore required field ^M0WaKvpF
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
-			"endArrowhead": "arrow",
+			"endArrowhead": "triangle",
 			"points": [
 				[
 					0,
@@ -407,8 +407,8 @@ can't ignore required field ^M0WaKvpF
 		},
 		{
 			"type": "arrow",
-			"version": 368,
-			"versionNonce": 1916913228,
+			"version": 371,
+			"versionNonce": 806636944,
 			"isDeleted": false,
 			"id": "zyEn2JaAhVqTFwFFSjUK7",
 			"fillStyle": "hachure",
@@ -435,7 +435,7 @@ can't ignore required field ^M0WaKvpF
 					"id": "hP84n313"
 				}
 			],
-			"updated": 1704015366729,
+			"updated": 1704137628359,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -450,7 +450,7 @@ can't ignore required field ^M0WaKvpF
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
-			"endArrowhead": "arrow",
+			"endArrowhead": "triangle",
 			"points": [
 				[
 					0,
@@ -700,8 +700,8 @@ can't ignore required field ^M0WaKvpF
 		},
 		{
 			"type": "arrow",
-			"version": 430,
-			"versionNonce": 1508221772,
+			"version": 433,
+			"versionNonce": 1145901936,
 			"isDeleted": false,
 			"id": "jPj6OXEdNET2u6CjmEz2s",
 			"fillStyle": "hachure",
@@ -710,12 +710,12 @@ can't ignore required field ^M0WaKvpF
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -237.80561528030927,
-			"y": -128.23699397466777,
+			"x": -237.80560679886221,
+			"y": -128.23669984549625,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 89.45214533257285,
-			"height": 31.824469877219457,
+			"width": 89.45205079218985,
+			"height": 31.824289722959577,
 			"seed": 1498889085,
 			"groupIds": [],
 			"frameId": null,
@@ -728,7 +728,7 @@ can't ignore required field ^M0WaKvpF
 					"id": "hvhrbQ5I"
 				}
 			],
-			"updated": 1704015366730,
+			"updated": 1704137628359,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -743,15 +743,15 @@ can't ignore required field ^M0WaKvpF
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
-			"endArrowhead": "arrow",
+			"endArrowhead": "triangle",
 			"points": [
 				[
 					0,
 					0
 				],
 				[
-					89.45214533257285,
-					31.824469877219457
+					89.45205079218985,
+					31.824289722959577
 				]
 			]
 		},
@@ -844,7 +844,7 @@ can't ignore required field ^M0WaKvpF
 		"currentItemFontSize": 16,
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
+		"currentItemEndArrowhead": "triangle",
 		"scrollX": 493.77703179480227,
 		"scrollY": 420.8595198635385,
 		"zoom": {
