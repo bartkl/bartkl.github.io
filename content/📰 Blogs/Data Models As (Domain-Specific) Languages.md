@@ -1,7 +1,6 @@
 ---
 tags:
   - data-modeling
-  - type/blog
   - programming
 date: 2023-12-18
 ---

@@ -18,3 +18,8 @@ Dit heeft te maken met $x^2$. Ofwel, met \(x^2\). Of, met \\(x^2\\).
 ```python
 class PythonClass():
     x: str
+```
+
+---
+
+![](Even%20testen%202023-12-31%2015.27.47.excalidraw)

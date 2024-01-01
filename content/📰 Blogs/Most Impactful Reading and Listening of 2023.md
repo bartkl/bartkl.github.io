@@ -1,7 +1,5 @@
 ---
 date: 2023-12-22
-tags:
-  - type/blog
 ---
 This is a review of the resources I've consumed in 2023 and learned the most from professionally, was the most intrigued by, had the most fun with, etc. It's not a comprehensive list either: only the best are covered.
 

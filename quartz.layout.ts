@@ -32,7 +32,7 @@ export const defaultContentPageLayout: PageLayout = {
     // Component.RecentNotes({ title: "Recent", limit: 10 }),
     Component.DesktopOnly(Component.Explorer({
       title: "/",
-      filterFn: (node) => node.name !== "Excalidraw" && node.name !== "tags",
+      filterFn: (node) => !["Attachments", "Excalidraw", "tags"].includes(node.name),
       sortFn: (a: FileNode, b: FileNode) => {
         if (!a.file && !b.file) {
           return a.displayName.localeCompare(b.displayName);
