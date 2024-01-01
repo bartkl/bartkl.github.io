@@ -36,7 +36,7 @@ export function renderExcalidrawLinks(theme: "dark" | "light") {
 }
 
 // Have SVG images in the article adhere to the correct color scheme.
-addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("nav", (e) => {
   let theme = localStorage.getItem("theme")
 
   Object.values(document.getElementsByTagName("article")[0]
