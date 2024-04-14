@@ -3,6 +3,13 @@ import { getUserPreferredColorScheme, renderExcalidrawLinks } from "./util"
 const currentTheme = localStorage.getItem("theme") ?? getUserPreferredColorScheme()
 document.documentElement.setAttribute("saved-theme", currentTheme)
 
+const emitThemeChangeEvent = (theme: "light" | "dark") => {
+  const event: CustomEventMap["themechange"] = new CustomEvent("themechange", {
+    detail: { theme },
+  })
+  document.dispatchEvent(event)
+}
+
 document.addEventListener("nav", () => {
   const switchTheme = (e: any) => {
     if (e.target.checked) {
@@ -17,18 +24,14 @@ document.addEventListener("nav", () => {
 
   // Darkmode toggle
   const toggleSwitch = document.querySelector("#darkmode-toggle") as HTMLInputElement
-  toggleSwitch.removeEventListener("change", switchTheme)
   toggleSwitch.addEventListener("change", switchTheme)
+  window.addCleanup(() => toggleSwitch.removeEventListener("change", switchTheme))
   if (currentTheme === "dark") {
     toggleSwitch.checked = true
   }
 
   // Listen for changes in prefers-color-scheme
   const colorSchemeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
-  colorSchemeMediaQuery.addEventListener("change", (e) => {
-    const newTheme = e.matches ? "dark" : "light"
-    document.documentElement.setAttribute("saved-theme", newTheme)
-    localStorage.setItem("theme", newTheme)
-    toggleSwitch.checked = e.matches
-  })
+  colorSchemeMediaQuery.addEventListener("change", themeChange)
+  window.addCleanup(() => colorSchemeMediaQuery.removeEventListener("change", themeChange))
 })
