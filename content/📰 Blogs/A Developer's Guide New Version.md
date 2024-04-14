@@ -1,14 +1,13 @@
 ---
 title: "A Developer's Guide to Semantic Data Modeling - Part 1: Information Models"
 date: 12-30-2023
-draft: false
+draft: true
 ---
-
 # Who Should Read This
-As a developer or data engineer, you are probably regularly faced with the following challenges:
+As a developer or data engineer you are probably regularly faced with the following challenges:
 
 * Naming things intelligibly, accurately and consistently
-* Modeling the domain and requirements of the use case well, losing time (and perhaps energ) consulting with subject matter experts
+* Modeling the domain and requirements of the use case well, losing time (and perhaps energy) consulting with subject matter experts
 * Querying data from a database, having to guess what the `Z_FLD_01` represents
 * Integrating two data sets you need to judge whether the `Customer` type used in the first data set is equivalent to the `Client` type used in the second, with documentation being hard to find or ambiguous at best and lacking altogether at worst
 * Being unable to reuse a data model because it is written in a different language, or because the constraints don't fit
@@ -16,7 +15,7 @@ As a developer or data engineer, you are probably regularly faced with the follo
 
 If so, and if you want to tackle these challenges, you should definitely read this article.
 
-In this article you'll learn to take on these issues by putting to use different kinds of data models and specialized, and dedicated modeling languages to represent them in. You'll be learning about conceptual or semantic modeling, TODO.
+In this article you'll learn to take on these issues by putting to use different kinds of data models and specialized, and dedicated modeling languages to represent them in.
 
 First, let's take a closer look at the aforementioned challenges.
 
@@ -57,11 +56,11 @@ Coming up with good names is hard. Making sure names are standardized and used c
 #### Lack of proper and findable documentation
 Documentation in which definitions or descriptions can be found of what the elements in our data models mean can help us a lot. In practice, however, providing documentation turns out to be challenging.
 
-First of all, where should the documentation be maintained? It seems preferable to keep its maintenance close to the data model, such that when we make changes to it, we change update the documentation as well.
+First of all, where should the documentation be maintained? It seems preferable to keep its maintenance close to the data model, such that when we make changes to it, we update the documentation as well.
 
-Some languages provide convenient capabilities to do this. For example, OpenAPI specifications and Pydantic data classes both support providing descriptions for fields. However, not with every language do you have this luxury. For example, with SQL DDL and plain Java classes you probably would have to do with regular code comments.
+Some languages provide convenient capabilities to do this. For example, OpenAPI specifications and Pydantic data classes both support providing descriptions for fields. However, not with every language do you have this luxury. In SQL DDL and plain Java classes for instance you would probably have to do with regular code comments.
 
-So far we've only spoken about maintenance. Our documentation also needs to be easy to find and comfortable to read. Surely we cannot expect people, especially non-developers, to navigate through the large variety of codebases where documentation is included in a variety of languages. We need to make sure there's a central and easy to find place where all of the documentation can be read in a uniformous, comfortable way.
+And that's just maintenance. Documentation also needs to be easy to find and comfortable to read. Surely we cannot expect people, especially non-developers, to navigate through the large variety of codebases where documentation is included in a variety of languages. We need to make sure there's a central and easy to find place where all of the documentation can be read in a uniformous, comfortable way.
 
 ## Harmonizing data from different datasets
 ![[A Developer's Guide - Data Harmonization - 2023-12-31 09.44.31.excalidraw]]
@@ -107,7 +106,8 @@ The data model should represent concepts from the domain and relations between t
 #### Constraints
 The **constraints** of your data model express the expected use of the data. It imposes structure and ensures that values have valid cardinalities and types.
 
-> [!tip] An elegant consideration is to regard [[Data Models As (Domain-Specific) Languages|data models as a (domain-specific) language]] by interpreting the constraints as the syntax of that language.
+> [!tip] Domain-specific Languages
+> An elegant consideration is to regard [[Data Models As (Domain-Specific) Languages|data models as a (domain-specific) language]] by interpreting the constraints as the syntax of that language.
 
 #### Technical details
 To actually have a usable data model, the semantics and constraints have to be encoded using some language or technology. Doing this as well as possible adhering to good practices documented for the used technology makes sure to take care of the **implementation details** of your data model.
@@ -153,7 +153,9 @@ Ideally, developers focus on building applications, and should at most be bother
 
 > [!definition] Definition
 >
-> A **conceptual (data) model**[^1] is a model of a domain in which concepts and relations between them are described with the intent of conveying the semantics of the data.
+> A **conceptual (data) model**[^1] is a model of a domain in which concepts and the relations between them that exist in the domain are described.
+> 
+> The purpose of conceptual models is to describe the semantics of the data with varying levels of detail depending.
 > 
 > It is a model of the **semantics** of your data, independent of use case, applications and technology.
 

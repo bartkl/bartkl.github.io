@@ -52,9 +52,9 @@ export const defaultContentPageLayout: PageLayout = {
     }))
   ],
   right: [
-    Component.Graph({ showTags: false }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
+    Component.Graph({ showTags: false }),
   ]
 }
 
