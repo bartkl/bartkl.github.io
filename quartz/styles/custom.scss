@@ -55,3 +55,23 @@ h6 {
     padding-left: 1rem;
   }
 }
+
+div[data-folderpath="Books"] span.folder-title::before {
+    content: "📖 ";
+}
+
+div[data-folderpath="Blogs"] span.folder-title::before {
+    content: "📰 ";
+}
+
+div[data-folderpath="Presentations"] span.folder-title::before {
+    content: "📈 ";
+}
+
+div[data-folderpath="Notes"] span.folder-title::before {
+    content: "📝 ";
+}
+
+div[data-folderpath="Terms"] span.folder-title::before {
+    content: "🔤 ";
+}
