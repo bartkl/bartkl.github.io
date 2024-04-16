@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7b0fb36b96dab603",
+        "id": "3d44dc23fc5e9269",
         "type": "tabs",
         "children": [
           {
-            "id": "1b7fd76282dedfe3",
+            "id": "de482beea1ee0d8c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blogs/A Developer's Guide New Version.md",
+                "file": "Blogs/Test.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blogs/A Developer's Guide New Version.md",
+                "file": "Blogs/Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blogs/A Developer's Guide New Version.md",
+                "file": "Blogs/Test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blogs/A Developer's Guide New Version.md"
+                "file": "Blogs/Test.md"
               }
             }
           },
@@ -156,10 +156,28 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1b7fd76282dedfe3",
+  "active": "de482beea1ee0d8c",
   "lastOpenFiles": [
-    "Attachments/Elements of Clojure - Book Cover.png",
+    "Presentations.md",
+    "Blogs/Test 2.md",
+    "A Developer's Guide New Version.md",
+    "Blogs/A Developer's Guide New Version.md",
+    "Blogs/Data Models As (Domain-Specific) Languages.md",
+    "Blogs/A Developer's Guide to Semantic Data Modeling - Part 1.md",
+    "Blogs/Test.md",
+    "Blogs/Most Impactful Reading and Listening of 2023.md",
+    "Blogs/A Developer's Guide New Version.md~",
+    "Blogs/Test.md~",
+    "index.md",
+    "Attachments/Test 2024-04-16 10.54.12.excalidraw.md",
+    "Attachments/Test 2024-04-16 10.54.12.excalidraw.light.svg",
+    "Attachments/Test 2024-04-16 10.53.31.excalidraw.md",
+    "Attachments/Test 2024-04-16 10.53.31.excalidraw.dark.svg",
+    "Attachments/Test 2024-04-16 10.53.31.excalidraw.light.svg",
+    "Attachments/Test 2024-04-16 10.54.12.excalidraw.dark.svg",
     "Attachments/Semantic Web for the Working Ontologist (3rd Edition) - Book Cover.png",
+    "Excalidraw/A Developer's Guide to Semantic Data Modeling - Domain Modeling - 2023-12-30 23.08.11.excalidraw.md",
+    "Attachments/Elements of Clojure - Book Cover.png",
     "Attachments/Drawing 2024-04-16 10.13.44.excalidraw.md",
     "Attachments/Drawing 2024-04-16 10.13.44.excalidraw.dark.svg",
     "Attachments/Drawing 2024-04-16 10.13.44.excalidraw.light.svg",
@@ -167,17 +185,10 @@
     "Attachments/Drawing 2024-04-16 10.12.43.excalidraw.dark.svg",
     "Attachments/Drawing 2024-04-16 10.12.43.excalidraw.md",
     "Notes/Data Modeling/Overview of Types of Data Models.md",
-    "Blogs/Most Impactful Reading and Listening of 2023.md",
-    "Presentations.md",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/CIM Users Group 2024 - CIM Data Products and Linked Data.md",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/alliander_logo.png",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Data Mesh Core Principles.excalidraw.md",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/22323CIM Users Group 2024 - CIM Data Products and Linked Data 2024-04-16 10.15.13.excalidraw.md",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/22323CIM Users Group 2024 - CIM Data Products and Linked Data 2024-04-16 10.15.13.excalidraw.light.svg",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/22323CIM Users Group 2024 - CIM Data Products and Linked Data 2024-04-16 10.15.13.excalidraw.dark.svg",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/CIM Users Group 2024 - CIM Data Products and Linked Data 2024-04-16 10.14.04.excalidraw.md",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/CIM Users Group 2024 - CIM Data Products and Linked Data 2024-04-16 10.14.04.excalidraw.light.svg",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/CIM Users Group 2024 - CIM Data Products and Linked Data 2024-04-16 10.14.04.excalidraw.dark.svg",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Sparx EA - 2.bak.excalidraw.md",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Data Products Modeling All Layers.excalidraw.md",
@@ -187,22 +198,11 @@
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Excalidraw",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/CIM Users Group 2024 - CIM Data Products and Linked Data 2024-02-20 07.35.50.excalidraw.md",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/CIM Users Group 2024 - CIM Data Products and Linked Data 1.md",
-    "Blogs/A Developer's Guide New Version.md",
-    "Excalidraw/A Developer's Guide - Data Harmonization - 2023-12-31 09.44.31.excalidraw.md",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/What are Data Products.excalidraw.html",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA.excalidraw.html",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA.bak.excalidraw.html",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA Header BG.excalidraw.html",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA 2.excalidraw.html",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA 1.excalidraw.html",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA 0.excalidraw.html",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA - 2.bak.excalidraw.html",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/What are Data Products.excalidraw.md",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Sparx EA Header BG.excalidraw.md",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Sparx EA.excalidraw.md",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Sparx EA.bak.excalidraw.md",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Sparx EA 2.excalidraw.md",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Sparx EA 1.excalidraw.md",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Sparx EA 0.excalidraw.md"
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA 1.excalidraw.html"
   ]
 }

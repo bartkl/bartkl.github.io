@@ -32,6 +32,6 @@ document.addEventListener("nav", () => {
 
   // Listen for changes in prefers-color-scheme
   const colorSchemeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
-  colorSchemeMediaQuery.addEventListener("change", themeChange)
+  colorSchemeMediaQuery.addEventListener("themechange", themeChange)
   window.addCleanup(() => colorSchemeMediaQuery.removeEventListener("change", themeChange))
 })

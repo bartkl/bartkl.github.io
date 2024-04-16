@@ -19,7 +19,7 @@
   "annotatePrefix": "annotated_",
   "annotatePreserveSize": false,
   "previewImageType": "SVG",
-  "allowImageCache": true,
+  "allowImageCache": false,
   "displayExportedImageIfAvailable": false,
   "previewMatchObsidianTheme": true,
   "width": "400",

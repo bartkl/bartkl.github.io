@@ -238,6 +238,7 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
                 if (value.startsWith("!")) {
                   const ext: string = path.extname(fp).toLowerCase()
                   const url = slugifyFilePath(fp as FilePath)
+
                   if ([".png", ".jpg", ".jpeg", ".gif", ".bmp", ".svg", ".webp"].includes(ext)) {
                     const match = wikilinkImageEmbedRegex.exec(alias ?? "")
                     const alt = match?.groups?.alt ?? ""
@@ -270,6 +271,12 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
                     return {
                       type: "html",
                       value: `<iframe src="${url}"></iframe>`,
+                    }
+                  } else if (ext == ".excalidraw") {
+                    // const url = fp + anchor
+                    return {
+                      type: "link",
+                      url,
                     }
                   } else {
                     const block = anchor

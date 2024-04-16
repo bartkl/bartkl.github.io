@@ -45,7 +45,7 @@ performs recording? ^rePYfPi6
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.13",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.4",
 	"elements": [
 		{
 			"type": "rectangle",
@@ -119,8 +119,7 @@ performs recording? ^rePYfPi6
 			"verticalAlign": "top",
 			"containerId": "xLS5D0aKxKP1jEbzdimXe",
 			"originalText": "Artist",
-			"lineHeight": 1.25,
-			"baseline": 10
+			"lineHeight": 1.25
 		},
 		{
 			"type": "ellipse",
@@ -185,8 +184,7 @@ performs recording? ^rePYfPi6
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Performer?",
-			"lineHeight": 1.25,
-			"baseline": 8
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -222,8 +220,7 @@ performs recording? ^rePYfPi6
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "name\nage\ngenre",
-			"lineHeight": 1.25,
-			"baseline": 39
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -353,13 +350,12 @@ performs recording? ^rePYfPi6
 			"verticalAlign": "top",
 			"containerId": "Q2Kzo2Hn09ip3lJUvZjJd",
 			"originalText": "Recording",
-			"lineHeight": 1.25,
-			"baseline": 10
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
-			"version": 780,
-			"versionNonce": 1646294419,
+			"version": 782,
+			"versionNonce": 792013000,
 			"isDeleted": false,
 			"id": "DCrPF6VUVG8WDstHhKSwk",
 			"fillStyle": "solid",
@@ -368,12 +364,12 @@ performs recording? ^rePYfPi6
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -318.66407769559794,
-			"y": -273.9948373682233,
+			"x": -318.66396924311084,
+			"y": -273.99490420024864,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 213.46202707369372,
-			"height": 67.65041699760974,
+			"width": 213.46197100285505,
+			"height": 67.6504838296351,
 			"seed": 314627453,
 			"groupIds": [],
 			"frameId": null,
@@ -386,7 +382,7 @@ performs recording? ^rePYfPi6
 					"id": "H7i4OYbX"
 				}
 			],
-			"updated": 1704014919102,
+			"updated": 1713257418184,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -408,8 +404,8 @@ performs recording? ^rePYfPi6
 					0
 				],
 				[
-					213.46202707369372,
-					67.65041699760974
+					213.46197100285505,
+					67.6504838296351
 				]
 			]
 		},
@@ -447,8 +443,7 @@ performs recording? ^rePYfPi6
 			"verticalAlign": "middle",
 			"containerId": "DCrPF6VUVG8WDstHhKSwk",
 			"originalText": "performs",
-			"lineHeight": 1.25,
-			"baseline": 10
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -484,8 +479,7 @@ performs recording? ^rePYfPi6
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "name\ngenre",
-			"lineHeight": 1.25,
-			"baseline": 24
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -521,8 +515,7 @@ performs recording? ^rePYfPi6
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "irrelevant?",
-			"lineHeight": 1.25,
-			"baseline": 8
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -600,13 +593,12 @@ performs recording? ^rePYfPi6
 			"verticalAlign": "top",
 			"containerId": "H5YhiqKCNbFUOvaoHOV_L",
 			"originalText": "Musical Work",
-			"lineHeight": 1.25,
-			"baseline": 10
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
-			"version": 630,
-			"versionNonce": 651144787,
+			"version": 634,
+			"versionNonce": 1337932488,
 			"isDeleted": false,
 			"id": "DFShWn-Ikpfgc6X9x7h5Y",
 			"fillStyle": "solid",
@@ -615,12 +607,12 @@ performs recording? ^rePYfPi6
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -265.1404538631678,
-			"y": -166.30258668353466,
+			"x": -265.14045386316775,
+			"y": -166.30260402466547,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 97.87921474328658,
-			"height": 0.2897122874104525,
+			"width": 97.87921474328652,
+			"height": 0.28972292620227336,
 			"seed": 1846620115,
 			"groupIds": [],
 			"frameId": null,
@@ -633,7 +625,7 @@ performs recording? ^rePYfPi6
 					"id": "c8VtlJUe"
 				}
 			],
-			"updated": 1704014919102,
+			"updated": 1713257418183,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -655,8 +647,8 @@ performs recording? ^rePYfPi6
 					0
 				],
 				[
-					97.87921474328658,
-					0.2897122874104525
+					97.87921474328652,
+					0.28972292620227336
 				]
 			]
 		},
@@ -694,8 +686,7 @@ performs recording? ^rePYfPi6
 			"verticalAlign": "middle",
 			"containerId": "DFShWn-Ikpfgc6X9x7h5Y",
 			"originalText": "recording of",
-			"lineHeight": 1.25,
-			"baseline": 10
+			"lineHeight": 1.25
 		},
 		{
 			"type": "ellipse",
@@ -832,13 +823,12 @@ performs recording? ^rePYfPi6
 			"verticalAlign": "top",
 			"containerId": "wSK9nZtCSYiGiC1qxw4Eo",
 			"originalText": "Genre",
-			"lineHeight": 1.25,
-			"baseline": 10
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
-			"version": 363,
-			"versionNonce": 1346521907,
+			"version": 364,
+			"versionNonce": 1596248008,
 			"isDeleted": false,
 			"id": "JirAl98Ki3BZ6g26GiLpt",
 			"fillStyle": "solid",
@@ -865,7 +855,7 @@ performs recording? ^rePYfPi6
 					"id": "B4iygWcz"
 				}
 			],
-			"updated": 1704014919103,
+			"updated": 1713257418184,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -930,8 +920,7 @@ performs recording? ^rePYfPi6
 			"verticalAlign": "middle",
 			"containerId": "JirAl98Ki3BZ6g26GiLpt",
 			"originalText": "genre as relation?",
-			"lineHeight": 1.25,
-			"baseline": 8
+			"lineHeight": 1.25
 		},
 		{
 			"type": "ellipse",
@@ -1094,13 +1083,12 @@ performs recording? ^rePYfPi6
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "?",
-			"lineHeight": 1.25,
-			"baseline": 8
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
-			"version": 546,
-			"versionNonce": 1072830227,
+			"version": 547,
+			"versionNonce": 2001063112,
 			"isDeleted": false,
 			"id": "7pTj1KhCM-lOqsfC05o6v",
 			"fillStyle": "hachure",
@@ -1127,7 +1115,7 @@ performs recording? ^rePYfPi6
 					"id": "rePYfPi6"
 				}
 			],
-			"updated": 1704014919102,
+			"updated": 1713257418179,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1192,8 +1180,7 @@ performs recording? ^rePYfPi6
 			"verticalAlign": "middle",
 			"containerId": "7pTj1KhCM-lOqsfC05o6v",
 			"originalText": "performs recording?",
-			"lineHeight": 1.25,
-			"baseline": 8
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -1317,8 +1304,7 @@ performs recording? ^rePYfPi6
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "?",
-			"lineHeight": 1.25,
-			"baseline": 8
+			"lineHeight": 1.25
 		}
 	],
 	"appState": {
@@ -1336,8 +1322,8 @@ performs recording? ^rePYfPi6
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "triangle",
-		"scrollX": 607.6349868774414,
-		"scrollY": 467.05665063890183,
+		"scrollX": 547.6349868774414,
+		"scrollY": 466.67774438890183,
 		"zoom": {
 			"value": 2
 		},

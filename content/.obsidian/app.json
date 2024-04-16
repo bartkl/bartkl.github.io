@@ -6,5 +6,8 @@
   "spellcheck": false,
   "autoPairMarkdown": false,
   "autoPairBrackets": false,
-  "useTab": false
+  "useTab": false,
+  "vimMode": true,
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": true
 }

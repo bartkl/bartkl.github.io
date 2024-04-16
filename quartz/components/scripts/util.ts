@@ -44,6 +44,7 @@ document.addEventListener("nav", (e) => {
   let theme = localStorage.getItem("theme") ?? getUserPreferredColorScheme()
   Object.values(document.getElementsByTagName("article")[0]
                         .getElementsByTagName("a")).forEach(a => {
+    console.log(a.href)
     if (a.href.endsWith(".excalidraw")) {
       let img = document.createElement("img")
       img.src = `${a.href}.${theme}.svg`
