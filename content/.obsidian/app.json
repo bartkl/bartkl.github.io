@@ -2,5 +2,9 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "Drafts",
   "attachmentFolderPath": "Attachments",
-  "propertiesInDocument": "source"
+  "propertiesInDocument": "source",
+  "spellcheck": false,
+  "autoPairMarkdown": false,
+  "autoPairBrackets": false,
+  "useTab": false
 }
