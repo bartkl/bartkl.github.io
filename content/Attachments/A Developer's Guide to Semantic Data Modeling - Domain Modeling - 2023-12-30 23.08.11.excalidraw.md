@@ -354,8 +354,8 @@ performs recording? ^rePYfPi6
 		},
 		{
 			"type": "arrow",
-			"version": 782,
-			"versionNonce": 792013000,
+			"version": 784,
+			"versionNonce": 1180933827,
 			"isDeleted": false,
 			"id": "DCrPF6VUVG8WDstHhKSwk",
 			"fillStyle": "solid",
@@ -364,12 +364,12 @@ performs recording? ^rePYfPi6
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -318.66396924311084,
-			"y": -273.99490420024864,
+			"x": -318.6639683874722,
+			"y": -273.9949047275298,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 213.46197100285505,
-			"height": 67.6504838296351,
+			"width": 213.46197056048663,
+			"height": 67.65048435691625,
 			"seed": 314627453,
 			"groupIds": [],
 			"frameId": null,
@@ -382,7 +382,7 @@ performs recording? ^rePYfPi6
 					"id": "H7i4OYbX"
 				}
 			],
-			"updated": 1713257418184,
+			"updated": 1713284323963,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -404,8 +404,8 @@ performs recording? ^rePYfPi6
 					0
 				],
 				[
-					213.46197100285505,
-					67.6504838296351
+					213.46197056048663,
+					67.65048435691625
 				]
 			]
 		},
@@ -597,8 +597,8 @@ performs recording? ^rePYfPi6
 		},
 		{
 			"type": "arrow",
-			"version": 634,
-			"versionNonce": 1337932488,
+			"version": 638,
+			"versionNonce": 1404724099,
 			"isDeleted": false,
 			"id": "DFShWn-Ikpfgc6X9x7h5Y",
 			"fillStyle": "solid",
@@ -607,12 +607,12 @@ performs recording? ^rePYfPi6
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -265.14045386316775,
-			"y": -166.30260402466547,
+			"x": -265.1404538631678,
+			"y": -166.30260437959208,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 97.87921474328652,
-			"height": 0.28972292620227336,
+			"width": 97.87921474328658,
+			"height": 0.2897231439499137,
 			"seed": 1846620115,
 			"groupIds": [],
 			"frameId": null,
@@ -625,7 +625,7 @@ performs recording? ^rePYfPi6
 					"id": "c8VtlJUe"
 				}
 			],
-			"updated": 1713257418183,
+			"updated": 1713284323962,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -647,8 +647,8 @@ performs recording? ^rePYfPi6
 					0
 				],
 				[
-					97.87921474328652,
-					0.28972292620227336
+					97.87921474328658,
+					0.2897231439499137
 				]
 			]
 		},
@@ -827,8 +827,8 @@ performs recording? ^rePYfPi6
 		},
 		{
 			"type": "arrow",
-			"version": 364,
-			"versionNonce": 1596248008,
+			"version": 365,
+			"versionNonce": 2124992099,
 			"isDeleted": false,
 			"id": "JirAl98Ki3BZ6g26GiLpt",
 			"fillStyle": "solid",
@@ -855,7 +855,7 @@ performs recording? ^rePYfPi6
 					"id": "B4iygWcz"
 				}
 			],
-			"updated": 1713257418184,
+			"updated": 1713284323963,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1087,8 +1087,8 @@ performs recording? ^rePYfPi6
 		},
 		{
 			"type": "arrow",
-			"version": 547,
-			"versionNonce": 2001063112,
+			"version": 548,
+			"versionNonce": 431446083,
 			"isDeleted": false,
 			"id": "7pTj1KhCM-lOqsfC05o6v",
 			"fillStyle": "hachure",
@@ -1115,7 +1115,7 @@ performs recording? ^rePYfPi6
 					"id": "rePYfPi6"
 				}
 			],
-			"updated": 1713257418179,
+			"updated": 1713284323960,
 			"link": null,
 			"locked": false,
 			"startBinding": {

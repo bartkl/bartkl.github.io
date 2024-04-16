@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Notes/Data Modeling/Overview of Types of Data Models.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "Notes/Data Modeling/Overview of Types of Data Models.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "Notes/Data Modeling/Overview of Types of Data Models.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "Notes/Data Modeling/Overview of Types of Data Models.md"
               }
             }
           },
@@ -158,9 +158,17 @@
   },
   "active": "4f647a9b74995556",
   "lastOpenFiles": [
+    "Books/2014-12-20  Gelukkig leven - Seneca.md",
+    "Blogs/Most Impactful Reading and Listening of 2023.md",
+    "Blogs/Data Models As (Domain-Specific) Languages.md",
+    "Blogs/A Developer's Guide to Semantic Data Modeling - Part 1.md",
+    "Blogs/A Developer's Guide New Version.md",
+    "Attachments/A Developer's Guide to Semantic Data Modeling - Domain Modeling - 2023-12-30 23.08.11.excalidraw.md",
+    "Attachments/Semantic Web for the Working Ontologist (3rd Edition) - Book Cover.png",
+    "index.md",
+    "Blogs/Test.md",
     "Presentations.md",
     "Attachments/Elements of Clojure - Book Cover.png",
-    "Attachments/Semantic Web for the Working Ontologist (3rd Edition) - Book Cover.png",
     "Attachments/Test 2024-04-16 10.54.12.excalidraw.md",
     "Attachments/Test 2024-04-16 10.54.12.excalidraw.light.svg",
     "Attachments/Test 2024-04-16 10.54.12.excalidraw.dark.svg",
@@ -171,22 +179,14 @@
     "Attachments/A Developer's Guide to Semantic Data Modeling - Opaque Names - 2023-12-30 23.08.11.excalidraw.light.svg",
     "Attachments/A Developer's Guide to Semantic Data Modeling - Opaque Names - 2023-12-30 23.08.11.excalidraw.dark.svg",
     "Attachments/A Developer's Guide to Semantic Data Modeling - Domain Modeling - 2023-12-30 23.08.11.excalidraw.light.svg",
-    "Attachments/A Developer's Guide to Semantic Data Modeling - Domain Modeling - 2023-12-30 23.08.11.excalidraw.md",
     "Attachments/A Developer's Guide New Version 2023-12-31 10.10.14.excalidraw.md",
     "Attachments/A Developer's Guide - Flexible Reuse - 2023-12-31 10.01.37.excalidraw.dark.svg",
     "Attachments/Even testen 2023-12-17 17.51.17.excalidraw.md",
     "Attachments/Conceptual Data Model 2023-12-17 23.38.30.excalidraw.md",
     "Attachments/A Developer's Guide - Flexible Reuse - 2023-12-31 10.01.37.excalidraw.md",
     "Attachments/A Developer's Guide - Data Harmonization - 2023-12-31 09.44.31.excalidraw.md",
-    "Books/2014-12-20  Gelukkig leven - Seneca.md",
-    "index.md",
-    "Blogs/Test.md",
-    "Blogs/Most Impactful Reading and Listening of 2023.md",
-    "Blogs/A Developer's Guide New Version.md",
-    "Blogs/A Developer's Guide to Semantic Data Modeling - Part 1.md",
     "Blogs/Test 2.md",
     "A Developer's Guide New Version.md",
-    "Blogs/Data Models As (Domain-Specific) Languages.md",
     "Blogs/A Developer's Guide New Version.md~",
     "Blogs/Test.md~",
     "Attachments/Drawing 2024-04-16 10.13.44.excalidraw.md",

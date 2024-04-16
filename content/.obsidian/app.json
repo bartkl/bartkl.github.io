@@ -8,6 +8,6 @@
   "autoPairBrackets": false,
   "useTab": false,
   "vimMode": true,
-  "newLinkFormat": "shortest",
-  "useMarkdownLinks": true
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": false
 }

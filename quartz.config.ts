@@ -16,7 +16,7 @@ const config: QuartzConfig = {
     },
     // baseUrl: "bartkl.com",
     baseUrl: "bartkl.github.io",
-    ignorePatterns: ["private", "templates", ".obsidian", "Presentations/*.md"],
+    ignorePatterns: ["private", "templates", ".obsidian", "Attachments/*.excalidraw.md"],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
@@ -68,10 +68,10 @@ const config: QuartzConfig = {
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false, wikilinks: true }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
-      Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
+      Plugin.CrawlLinks({ markdownLinkResolution: "relative" }),
       Plugin.Description(),
     ],
-    filters: [Plugin.RemoveDrafts()],
+    filters: [Plugin.RemoveDrafts(), Plugin.RemoveExcalidrawMDs()],
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),

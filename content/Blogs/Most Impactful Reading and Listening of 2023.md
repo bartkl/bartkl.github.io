@@ -8,7 +8,7 @@ The topics include mostly data architecture, semantic modeling, AI and LLMs, and
 # Books
 ### Semantic Web for the Working Ontologist: Effective Modeling for Linked Data, RDFS, and OWL (3rd Ed.)
 
-![[Semantic Web for the Working Ontologist (3rd Edition) - Book Cover.png]]
+![[../Attachments/Semantic Web for the Working Ontologist (3rd Edition) - Book Cover.png]]
 
 For those aspiring to work with semantic modeling, knowledge graphs or ontologies, The Semantic Web is a great framework of standards and technologies to learn.
 
@@ -20,7 +20,7 @@ Read my full review on Goodreads [here](https://www.goodreads.com/review/show/48
 
 ### Elements of Clojure
 
-![[Elements of Clojure - Book Cover.png]]
+![[../Attachments/Elements of Clojure - Book Cover.png]]
 
 I love books that teach me something fundamental, that challenge my core assumptions and frame things in a different, illuminating way. This book certainly falls in that category.
 

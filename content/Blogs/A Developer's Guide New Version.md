@@ -36,7 +36,8 @@ Then we're ready to learn about dedicated modeling languages such as RDF Schema,
 # Challenges with Data
 
 ## Accurately modeling the domain
-![[A Developer's Guide to Semantic Data Modeling - Domain Modeling - 2023-12-30 23.08.11.excalidraw]]
+
+![[../Attachments/A Developer's Guide to Semantic Data Modeling - Domain Modeling - 2023-12-30 23.08.11.excalidraw|A Developer's Guide to Semantic Data Modeling - Domain Modeling - 2023-12-30 23.08.11.excalidraw]]
 
 When creating a data model it should reflect the domain accurately. This involves, first and foremost, discerning what concepts and relations exist and deciding which ones are relevant to include in our model. We also have to choose how we represent these things in our data model and what to name them.
 
@@ -47,7 +48,7 @@ SMEs are likely to receive the same questions over and over from different devel
 Different SMEs tend to use different language and may have different conceptualizations of the domain in their minds. Because of this, the data models they helped making will suffer from those inconsistencies as well. This isn't ideal even if everyone were a domain expert, but especially since that's not the case, this can cause major confusion as to what the data means.
 
 ## Understanding what the data is about
-![[A Developer's Guide to Semantic Data Modeling - Opaque Names - 2023-12-30 23.08.11.excalidraw]]
+![[../Attachments/A Developer's Guide to Semantic Data Modeling - Opaque Names - 2023-12-30 23.08.11.excalidraw|A Developer's Guide to Semantic Data Modeling - Opaque Names - 2023-12-30 23.08.11.excalidraw]]
 #### Opaque, confusing or ambiguous names
 We've all been there, trying to guess the meaning of a column with some cryptical or completely opaque name like `Z_FLD_01` . Perhaps we're lucky, and the column name is intelligible but just ambiguous, as is the case with the `TAX` column in the image above: what is this column meant to represent? The amount of tax paid for this order line? The tax category it falls in?
 
@@ -63,7 +64,7 @@ Some languages provide convenient capabilities to do this. For example, OpenAPI 
 And that's just maintenance. Documentation also needs to be easy to find and comfortable to read. Surely we cannot expect people, especially non-developers, to navigate through the large variety of codebases where documentation is included in a variety of languages. We need to make sure there's a central and easy to find place where all of the documentation can be read in a uniformous, comfortable way.
 
 ## Harmonizing data from different datasets
-![[A Developer's Guide - Data Harmonization - 2023-12-31 09.44.31.excalidraw]]
+![[../Attachments/A Developer's Guide - Data Harmonization - 2023-12-31 09.44.31.excalidraw|A Developer's Guide - Data Harmonization - 2023-12-31 09.44.31.excalidraw]]
 
 Suppose we are consuming data from different sources (external to our own team or organisation) and wish to integrate these data sets. In order to do this we have to understand how terms used in one data set relate to those used in another.
 
@@ -72,7 +73,7 @@ For example, in the situation depicted in the image above we've obtained order d
 Besides this issue of **semantic interoperability**, there's also that of **technical interoperability**. Integrating data in a JSON document with a tabular result from a SQL query involves first parsing and transforming both in some intermediary (programming) language, only to then to subject them to the business logic that takes care of the integration.
 
 ## Flexible reuse of (parts of) models
-![[A Developer's Guide - Flexible Reuse - 2023-12-31 10.01.37.excalidraw]]
+![[../Attachments/A Developer's Guide - Flexible Reuse - 2023-12-31 10.01.37.excalidraw|A Developer's Guide - Flexible Reuse - 2023-12-31 10.01.37.excalidraw]]
 
 #### Reusing a data model
 If some part of a domain has been modeled appropriately in some data model, it would be great if this data model or parts of it could be reused. Sadly this is riddled with complications.
@@ -86,7 +87,7 @@ Some models are more flexible, such as graph database schemas which treat relati
 In some cases data models may vary greatly, but do share concepts and relations. Wouldn't it be nice if we could make it clear in our data models that we're both talking about the same concept, even though the constraints and structure and language used for technical representation are very different? Make sure to stay tuned and learn that this is not just a pipe dream.
 
 ## Maintenance of several implementations of the same data model
-![[A Developer's Guide New Version 2023-12-31 10.10.14.excalidraw]]
+![[../Attachments/A Developer's Guide New Version 2023-12-31 10.10.14.excalidraw|A Developer's Guide New Version 2023-12-31 10.10.14.excalidraw]]
 
 Often, the application you develop stores data in a database, which is then extracted and transformed in some programming language, and finally served with a API. You find yourself maintaining three schemas that are actually very similar - if not downright equal - besides the different technologies used.
 
