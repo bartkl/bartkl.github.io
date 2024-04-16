@@ -42,12 +42,12 @@ backgroundImage: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75))
 
 ###### Bart Kleijngeld | May 16th, 2024
 
-![bg cover opacity:0.35](scott-webb-mV9-1XjnM4Y-unsplash.jpg)
+![bg cover opacity:0.35](Attachments/CIMug%202024%20-%20CIM%20Data%20Products%20and%20Linked%20Data%20With%20LinkML/scott-webb-mV9-1XjnM4Y-unsplash.jpg)
 
 ## Hello
  :wave:
 
-![bg contain](ik.png)
+![bg contain](Attachments/CIMug%202024%20-%20CIM%20Data%20Products%20and%20Linked%20Data%20With%20LinkML/ik.png)
 * Bart Kleijngeld
 	* Software Developer
 	* Data Architect
@@ -69,7 +69,7 @@ TODO.
 
 ---
 
-![Data Mesh Core Principles.excalidraw.light](Data%20Mesh%20Core%20Principles.excalidraw.light.svg)
+![Data Mesh Core Principles.excalidraw.light](Attachments/CIMug%202024%20-%20CIM%20Data%20Products%20and%20Linked%20Data%20With%20LinkML/Data%20Mesh%20Core%20Principles.excalidraw.light.svg)
 
 * Socio-technical architecture
 * Decentralized and bottom-up
@@ -80,13 +80,13 @@ TODO.
 
 #### A Mesh of Data Products
 
-![Data products.excalidraw.light](Data%20products.excalidraw.light.svg)
+![Data products.excalidraw.light](Attachments/CIMug%202024%20-%20CIM%20Data%20Products%20and%20Linked%20Data%20With%20LinkML/Data%20products.excalidraw.light.svg)
 
 ### What is a Data Product?
 
 ---
 
-![bg 80%](What%20are%20Data%20Products.excalidraw.light.svg)
+![bg 80%](Attachments/CIMug%202024%20-%20CIM%20Data%20Products%20and%20Linked%20Data%20With%20LinkML/What%20are%20Data%20Products.excalidraw.light.svg)
 
 <!--
 - Data outlives technology and organisation, and therefore
@@ -112,10 +112,10 @@ TODO.
 <style scoped>
 ul { padding-inline-start: 0 }
 </style>
-  ![width:700px](MIM%20Conceptual%20Framework.excalidraw.light.svg)
+  ![width:700px](Attachments/CIMug%202024%20-%20CIM%20Data%20Products%20and%20Linked%20Data%20With%20LinkML/MIM%20Conceptual%20Framework.excalidraw.light.svg)
 <!-- Mention RFC3444-->
 * #### The CIM
-   ![width:700px](RFC3444%20Variant.excalidraw.light.svg)
+   ![width:700px](Attachments/CIMug%202024%20-%20CIM%20Data%20Products%20and%20Linked%20Data%20With%20LinkML/RFC3444%20Variant.excalidraw.light.svg)
 
 ---
 
@@ -138,7 +138,7 @@ What to use for modeling?
 
 
 
-![Data product logical modeling.excalidraw.light](Sparx%20EA%20Header%20BG.excalidraw.light.svg)
+![Data product logical modeling.excalidraw.light](Attachments/CIMug%202024%20-%20CIM%20Data%20Products%20and%20Linked%20Data%20With%20LinkML/Sparx%20EA%20Header%20BG.excalidraw.light.svg)
 
 * cannot refer to vocabularies not built in EA
 	* linkml/rdf decouple tools from language
