@@ -14,7 +14,8 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    baseUrl: "bartkl.com",
+    // baseUrl: "bartkl.com",
+    baseUrl: "bartkl.github.io",
     ignorePatterns: ["private", "templates", ".obsidian", "Presentations/*.md"],
     defaultDateType: "created",
     theme: {

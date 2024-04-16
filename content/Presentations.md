@@ -1,1 +1,0 @@
-* [CIM Data Products and Linked Data with LinkML](https://bartkl.github.io/presentations/cim-ug-2024-cim-data-products-and-linked-data-with-linkml/CIM%20Users%20Group%202024%20-%20CIM%20Data%20Products%20and%20Linked%20Data.html)
