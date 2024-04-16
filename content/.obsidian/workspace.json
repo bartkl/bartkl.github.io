@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "b3272a7904e8b94c",
+        "id": "7b0fb36b96dab603",
         "type": "tabs",
         "children": [
           {
-            "id": "91cc846f0d66e727",
+            "id": "1b7fd76282dedfe3",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Attachments/Elements of Clojure - Book Cover.png"
+                "file": "Blogs/A Developer's Guide New Version.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Attachments/Elements of Clojure - Book Cover.png",
+                "file": "Blogs/A Developer's Guide New Version.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Attachments/Elements of Clojure - Book Cover.png",
+                "file": "Blogs/A Developer's Guide New Version.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Attachments/Elements of Clojure - Book Cover.png"
+                "file": "Blogs/A Developer's Guide New Version.md"
               }
             }
           },
@@ -154,8 +156,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9b9831c858f5fdca",
+  "active": "1b7fd76282dedfe3",
   "lastOpenFiles": [
+    "Attachments/Elements of Clojure - Book Cover.png",
     "Attachments/Semantic Web for the Working Ontologist (3rd Edition) - Book Cover.png",
     "Attachments/Drawing 2024-04-16 10.13.44.excalidraw.md",
     "Attachments/Drawing 2024-04-16 10.13.44.excalidraw.dark.svg",
@@ -177,7 +180,6 @@
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/CIM Users Group 2024 - CIM Data Products and Linked Data 2024-04-16 10.14.04.excalidraw.dark.svg",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Sparx EA - 2.bak.excalidraw.md",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Data Products Modeling All Layers.excalidraw.light.svg",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Data Products Modeling All Layers.excalidraw.md",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Data products.excalidraw.md",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Data products.old.excalidraw.md",
