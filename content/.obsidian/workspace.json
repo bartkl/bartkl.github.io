@@ -1,0 +1,206 @@
+{
+  "main": {
+    "id": "ae7127efd6751973",
+    "type": "split",
+    "children": [
+      {
+        "id": "b3272a7904e8b94c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "91cc846f0d66e727",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Attachments/Elements of Clojure - Book Cover.png"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "98bac6f5b01b2d99",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c501cf53ec9931e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9b9831c858f5fdca",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e5dd61abbf569d89",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "maybe not",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c82be8cc4b009085",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 528.5
+  },
+  "right": {
+    "id": "a0260a153f1930fb",
+    "type": "split",
+    "children": [
+      {
+        "id": "a974ee7a54b910ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a7f70d8a6cc5ebaf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Attachments/Elements of Clojure - Book Cover.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cd7296ab6765dd43",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Attachments/Elements of Clojure - Book Cover.png",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "de40caff53e83c21",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "44914500b8918702",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Attachments/Elements of Clojure - Book Cover.png"
+              }
+            }
+          },
+          {
+            "id": "58819c2ef75f8054",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 494.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "9b9831c858f5fdca",
+  "lastOpenFiles": [
+    "Attachments/Semantic Web for the Working Ontologist (3rd Edition) - Book Cover.png",
+    "Attachments/Drawing 2024-04-16 10.13.44.excalidraw.md",
+    "Attachments/Drawing 2024-04-16 10.13.44.excalidraw.dark.svg",
+    "Attachments/Drawing 2024-04-16 10.13.44.excalidraw.light.svg",
+    "Attachments/Drawing 2024-04-16 10.12.43.excalidraw.light.svg",
+    "Attachments/Drawing 2024-04-16 10.12.43.excalidraw.dark.svg",
+    "Attachments/Drawing 2024-04-16 10.12.43.excalidraw.md",
+    "Notes/Data Modeling/Overview of Types of Data Models.md",
+    "Blogs/Most Impactful Reading and Listening of 2023.md",
+    "Presentations.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/CIM Users Group 2024 - CIM Data Products and Linked Data.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/alliander_logo.png",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Data Mesh Core Principles.excalidraw.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/22323CIM Users Group 2024 - CIM Data Products and Linked Data 2024-04-16 10.15.13.excalidraw.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/22323CIM Users Group 2024 - CIM Data Products and Linked Data 2024-04-16 10.15.13.excalidraw.light.svg",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/22323CIM Users Group 2024 - CIM Data Products and Linked Data 2024-04-16 10.15.13.excalidraw.dark.svg",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/CIM Users Group 2024 - CIM Data Products and Linked Data 2024-04-16 10.14.04.excalidraw.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/CIM Users Group 2024 - CIM Data Products and Linked Data 2024-04-16 10.14.04.excalidraw.light.svg",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/CIM Users Group 2024 - CIM Data Products and Linked Data 2024-04-16 10.14.04.excalidraw.dark.svg",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Sparx EA - 2.bak.excalidraw.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Data Products Modeling All Layers.excalidraw.light.svg",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Data Products Modeling All Layers.excalidraw.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Data products.excalidraw.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Data products.old.excalidraw.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/RFC3444 Variant.excalidraw.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Excalidraw",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/CIM Users Group 2024 - CIM Data Products and Linked Data 2024-02-20 07.35.50.excalidraw.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/CIM Users Group 2024 - CIM Data Products and Linked Data 1.md",
+    "Blogs/A Developer's Guide New Version.md",
+    "Excalidraw/A Developer's Guide - Data Harmonization - 2023-12-31 09.44.31.excalidraw.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/What are Data Products.excalidraw.html",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA.excalidraw.html",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA.bak.excalidraw.html",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA Header BG.excalidraw.html",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA 2.excalidraw.html",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA 1.excalidraw.html",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA 0.excalidraw.html",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA - 2.bak.excalidraw.html",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/What are Data Products.excalidraw.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Sparx EA Header BG.excalidraw.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Sparx EA.excalidraw.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Sparx EA.bak.excalidraw.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Sparx EA 2.excalidraw.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Sparx EA 1.excalidraw.md",
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments/Sparx EA 0.excalidraw.md"
+  ]
+}
