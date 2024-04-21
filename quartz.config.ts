@@ -15,7 +15,6 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     baseUrl: "bartkl.com",
-    // baseUrl: "bartkl.github.io",
     ignorePatterns: ["private", "templates", ".obsidian", "Attachments/*.excalidraw.md"],
     defaultDateType: "created",
     theme: {
