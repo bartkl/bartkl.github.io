@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Presentations.md",
+                "file": "Blogs/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Presentations.md",
+                "file": "Blogs/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Presentations.md",
+                "file": "Blogs/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Presentations.md"
+                "file": "Blogs/index.md"
               }
             }
           },
@@ -159,17 +159,19 @@
   "active": "fdc0052fea53d0a8",
   "lastOpenFiles": [
     "Blogs/Data Models As (Domain-Specific) Languages.md",
-    "Music.md",
+    "index.md",
+    "Blogs/index.md.md",
+    "__Blogs.md",
+    "___Blogs.md",
     "Books.md",
-    "Notes.md",
     "Presentations.md",
+    "Music.md",
+    "Notes.md",
     "Blogs/Most Impactful Reading and Listening of 2023.md",
     "Blogs/A Developer's Guide New Version.md",
     "Notes/Data Modeling/Overview of Types of Data Models.md",
-    "Blogs.md",
     "tags",
     "Tags",
-    "index.md",
     "Books/2014-12-20  Gelukkig leven - Seneca.md",
     "Blogs/A Developer's Guide to Semantic Data Modeling - Part 1.md",
     "Attachments/A Developer's Guide to Semantic Data Modeling - Domain Modeling - 2023-12-30 23.08.11.excalidraw.md",
@@ -196,8 +198,6 @@
     "A Developer's Guide New Version.md",
     "Blogs/A Developer's Guide New Version.md~",
     "Blogs/Test.md~",
-    "Attachments/Drawing 2024-04-16 10.13.44.excalidraw.md",
-    "Attachments/Drawing 2024-04-16 10.12.43.excalidraw.md",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Excalidraw",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/What are Data Products.excalidraw.html",

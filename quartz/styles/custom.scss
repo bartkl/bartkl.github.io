@@ -80,6 +80,9 @@ h6 {
     a[data-for="Books"]::before {
       content: "📖 ";
     }
+    li {
+      margin-bottom: 0.8rem;
+    }
   }
 }
 
@@ -91,6 +94,9 @@ h6 {
   .recent-ul {
     a.internal {
       background-color: transparent;
+    }
+    li {
+      list-style: none;
     }
   }
 }

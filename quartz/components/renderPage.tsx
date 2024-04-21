@@ -234,7 +234,6 @@ export function renderPage(
                 </div>
               </div>
               <Content {...componentData} />
-              <hr />
               {afterBody?.map((BodyComponent) => (
                 <BodyComponent {...componentData} />
               ))}

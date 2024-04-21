@@ -4,8 +4,9 @@ import * as Component from "./quartz/components"
 const explorerComponent = 
   Component.DesktopOnly(Component.Explorer({
     title: "Explorer",
-    filterFn: node => node.file,  // Show only files
-    //filterFn: (node) => !["Attachments", "Excalidraw", "tags"].includes(node.name),
+    //filterFn: node => node.file,  // Show only files
+    folderClickBehavior: "link",
+    filterFn: (node) => !["Attachments", "Excalidraw", "tags", "index.md"].includes(node.name),
     sortFn: (a: FileNode, b: FileNode) => {
       if (!a.file && !b.file) {
         return a.displayName.localeCompare(b.displayName);
@@ -20,7 +21,7 @@ const explorerComponent =
         return -1
       }
     },
-    folderDefaultState: "open",
+    folderDefaultState: "collapsed",
     // mapFn: (node) => node.displayName = node.file ? `<strong>${node.file.dates.created.toISOString().split('T')[0]}</strong> - ${node.displayName}` : node.displayName,
   }))
 
@@ -47,21 +48,42 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ContentMeta(),
     Component.TagList(),
   ],
+  // afterBody: [
+  //   Component.RecentNotes({
+  //     filter: (node) => !["Presentations", "index", "Music", "Blogs", "Notes", "Books"].includes(node.slug),
+  //     limit: 15
+  //   }),
+  // ],
   afterBody: [
     Component.RecentNotes({
-      filter: (node) => !["Presentations", "index", "Music", "Blogs", "Notes", "Books"].includes(node.slug),
-      limit: 15
+      title: "Notes",
+      filter: (f) => f.slug!.startsWith("Notes/"),
+      limit: 7,
+      linkToMore: "/Notes/" as SimpleSlug
+    }),
+    Component.RecentNotes({
+      title: "Blogs",
+      filter: (f) => f.slug!.startsWith("Blogs/"),
+      limit: 3,
+      linkToMore: "/Blogs/" as SimpleSlug
+    }),
+    Component.RecentNotes({
+      title: "Books",
+      filter: (f) => f.slug!.startsWith("Books/"),
+      limit: 3,
+      linkToMore: "/Books/" as SimpleSlug
+    }),
+    Component.RecentNotes({
+      title: "Music",
+      filter: (f) => f.slug!.startsWith("Music/"),
+      limit: 3,
+      linkToMore: "/Music/" as SimpleSlug
     }),
   ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     explorerComponent,
-    //Component.RecentNotes({
-    //  title: "Recent Activity",
-    //  limit: 3,
-    //  linkToMore: "/" as SimpleSlug,
-    //}),
   ],
   right: [
     Component.Search(),
