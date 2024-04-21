@@ -8,14 +8,14 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "📔 Brain",
+    pageTitle: "bartkl",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    // baseUrl: "bartkl.com",
-    baseUrl: "bartkl.github.io",
+    baseUrl: "bartkl.com",
+    // baseUrl: "bartkl.github.io",
     ignorePatterns: ["private", "templates", ".obsidian", "Attachments/*.excalidraw.md"],
     defaultDateType: "created",
     theme: {

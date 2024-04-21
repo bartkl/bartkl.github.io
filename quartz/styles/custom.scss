@@ -3,9 +3,12 @@
 
 // put your custom CSS here!
 
-//h1.article-title {
-//  font-size: 2rem;
-//}
+h1.page-title {
+  // font-family: monospace;
+  &::before {
+    content: "🖳 "  ;
+  }
+}
 
 .page {
   @media all and (max-width: $fullPageWidth) {
@@ -35,7 +38,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.12rem;
+  font-size: 1.2rem;
   margin-top: 1.62rem;
   margin-bottom: 1rem;
 }
@@ -56,22 +59,39 @@ h6 {
   }
 }
 
-div[data-folderpath="Books"] span.folder-title::before {
-    content: "📖 ";
+/* Explorer. */
+.explorer {
+  h2 {
+    font-size: 1rem;
+  }
+  #explorer-ul {
+    a[data-for="Blogs"]::before {
+      content: "📰 ";
+    }
+    a[data-for="Presentations"]::before {
+      content: "📈 ";
+    }
+    a[data-for="Notes"]::before {
+      content: "🗒️ ";
+    }
+    a[data-for="Music"]::before {
+      content: "🎧 ";
+    }
+    a[data-for="Books"]::before {
+      content: "📖 ";
+    }
+  }
 }
 
-div[data-folderpath="Blogs"] span.folder-title::before {
-    content: "📰 ";
+.recent-notes {
+  h2 {
+    font-size: 1.1rem;
+    margin-top: 0;
+  }
+  .recent-ul {
+    a.internal {
+      background-color: transparent;
+    }
+  }
 }
 
-div[data-folderpath="Presentations"] span.folder-title::before {
-    content: "📈 ";
-}
-
-div[data-folderpath="Notes"] span.folder-title::before {
-    content: "📝 ";
-}
-
-div[data-folderpath="Terms"] span.folder-title::before {
-    content: "🔤 ";
-}

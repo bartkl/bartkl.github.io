@@ -1,7 +1,7 @@
 ---
 tags:
-  - data-modeling
-  - programming
+  - cs/data-modeling
+  - cs/programming
 date: 2023-12-18
 ---
 Inspired by how the [Racket programming language](https://racket-lang.org/) holds to the [language-oriented programming](https://beautifulracket.com/appendix/why-lop-why-racket.html) philosophy that each interface could be considered a [domain-specific language](https://en.wikipedia.org/wiki/Domain-specific_language) (DSL), I came up with the following interesting perspective: what if we regard a data model to be the language of the domain, i.e. as a **domain-specific language**?

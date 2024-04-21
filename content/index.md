@@ -1,3 +1,5 @@
 ---
-title: Welcome
+title: Welcome to my homepage
 ---
+
+[[Blogs/]]
