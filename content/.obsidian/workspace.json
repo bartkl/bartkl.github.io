@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blogs/index.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blogs/index.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blogs/index.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blogs/index.md"
+                "file": "index.md"
               }
             }
           },
@@ -158,18 +158,22 @@
   },
   "active": "fdc0052fea53d0a8",
   "lastOpenFiles": [
-    "Blogs/Data Models As (Domain-Specific) Languages.md",
+    "Books.md",
     "index.md",
+    "Notes/index.md",
+    "Music.md",
+    "Blogs/index.md",
+    "Notes/Data Modeling/Overview of Types of Data Models.md",
+    "Attachments/Pasted image 20240421190945.png",
+    "Books/index.md",
+    "Blogs/Data Models As (Domain-Specific) Languages.md",
     "Blogs/index.md.md",
     "__Blogs.md",
     "___Blogs.md",
-    "Books.md",
     "Presentations.md",
-    "Music.md",
     "Notes.md",
     "Blogs/Most Impactful Reading and Listening of 2023.md",
     "Blogs/A Developer's Guide New Version.md",
-    "Notes/Data Modeling/Overview of Types of Data Models.md",
     "tags",
     "Tags",
     "Books/2014-12-20  Gelukkig leven - Seneca.md",
@@ -189,13 +193,8 @@
     "Attachments/A Developer's Guide to Semantic Data Modeling - Opaque Names - 2023-12-30 23.08.11.excalidraw.dark.svg",
     "Attachments/A Developer's Guide to Semantic Data Modeling - Domain Modeling - 2023-12-30 23.08.11.excalidraw.light.svg",
     "Attachments/A Developer's Guide New Version 2023-12-31 10.10.14.excalidraw.md",
-    "Attachments/A Developer's Guide - Flexible Reuse - 2023-12-31 10.01.37.excalidraw.dark.svg",
     "Attachments/Even testen 2023-12-17 17.51.17.excalidraw.md",
     "Attachments/Conceptual Data Model 2023-12-17 23.38.30.excalidraw.md",
-    "Attachments/A Developer's Guide - Flexible Reuse - 2023-12-31 10.01.37.excalidraw.md",
-    "Attachments/A Developer's Guide - Data Harmonization - 2023-12-31 09.44.31.excalidraw.md",
-    "Blogs/Test 2.md",
-    "A Developer's Guide New Version.md",
     "Blogs/A Developer's Guide New Version.md~",
     "Blogs/Test.md~",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments",

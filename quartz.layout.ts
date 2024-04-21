@@ -2,7 +2,7 @@ import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
 const explorerComponent = 
-  Component.DesktopOnly(Component.Explorer({
+  Component.Explorer({
     title: "Explorer",
     //filterFn: node => node.file,  // Show only files
     folderClickBehavior: "link",
@@ -23,7 +23,7 @@ const explorerComponent =
     },
     folderDefaultState: "collapsed",
     // mapFn: (node) => node.displayName = node.file ? `<strong>${node.file.dates.created.toISOString().split('T')[0]}</strong> - ${node.displayName}` : node.displayName,
-  }))
+  })
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -83,14 +83,14 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    explorerComponent,
-  ],
-  right: [
     Component.Search(),
     Component.Darkmode(),
+    Component.DesktopOnly(explorerComponent),
+  ],
+  right: [
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
-    Component.Graph({ showTags: false }),
+    Component.DesktopOnly(Component.Graph({ showTags: false })),
   ]
 }
 
@@ -102,7 +102,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    explorerComponent,
+    Component.DesktopOnly(explorerComponent),
   ],
   right: [],
 }
