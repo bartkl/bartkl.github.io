@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "721bb333dbc9643e",
+        "id": "6e7d79569ea8f994",
         "type": "tabs",
         "children": [
           {
-            "id": "fdc0052fea53d0a8",
+            "id": "67fa6e08a334269c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Blogs/The Losing Player Doubles Game - A Mathematical Proof.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 528.5
+    "width": 528.5,
+    "collapsed": true
   },
   "right": {
     "id": "a0260a153f1930fb",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "Blogs/The Losing Player Doubles Game - A Mathematical Proof.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "Blogs/The Losing Player Doubles Game - A Mathematical Proof.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "Blogs/The Losing Player Doubles Game - A Mathematical Proof.md"
               }
             }
           },
@@ -137,7 +138,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -156,14 +158,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "fdc0052fea53d0a8",
+  "active": "67fa6e08a334269c",
   "lastOpenFiles": [
-    "Books.md",
+    "Attachments/The Losing Player Doubles Game - A Mathematical Proof 2024-04-22 20.17.35.excalidraw.md",
+    "Attachments/The Losing Player Doubles Game - A Mathematical Proof 2024-04-22 20.17.35.excalidraw.light.svg",
+    "Attachments/The Losing Player Doubles Game - A Mathematical Proof 2024-04-22 20.17.35.excalidraw.dark.svg",
+    "Blogs/The Losing Player Doubles Game - A Mathematical Proof.md",
+    "Notes/Data Modeling/Overview of Types of Data Models.md",
+    "Blogs/The Losing Player Doubles Game - A Mathematical Proof.md~",
     "index.md",
+    "Books.md",
     "Notes/index.md",
     "Music.md",
     "Blogs/index.md",
-    "Notes/Data Modeling/Overview of Types of Data Models.md",
     "Attachments/Pasted image 20240421190945.png",
     "Books/index.md",
     "Blogs/Data Models As (Domain-Specific) Languages.md",
@@ -190,18 +197,13 @@
     "Attachments/Test 2024-04-16 10.53.31.excalidraw.dark.svg",
     "Attachments/A Developer's Guide to Semantic Data Modeling - Opaque Names - 2023-12-30 23.08.11.excalidraw.md",
     "Attachments/A Developer's Guide to Semantic Data Modeling - Opaque Names - 2023-12-30 23.08.11.excalidraw.light.svg",
-    "Attachments/A Developer's Guide to Semantic Data Modeling - Opaque Names - 2023-12-30 23.08.11.excalidraw.dark.svg",
-    "Attachments/A Developer's Guide to Semantic Data Modeling - Domain Modeling - 2023-12-30 23.08.11.excalidraw.light.svg",
     "Attachments/A Developer's Guide New Version 2023-12-31 10.10.14.excalidraw.md",
-    "Attachments/Even testen 2023-12-17 17.51.17.excalidraw.md",
-    "Attachments/Conceptual Data Model 2023-12-17 23.38.30.excalidraw.md",
     "Blogs/A Developer's Guide New Version.md~",
     "Blogs/Test.md~",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Excalidraw",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/What are Data Products.excalidraw.html",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA.excalidraw.html",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA.bak.excalidraw.html",
-    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA Header BG.excalidraw.html"
+    "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Sparx EA.bak.excalidraw.html"
   ]
 }
