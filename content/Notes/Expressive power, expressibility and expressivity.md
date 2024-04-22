@@ -1,5 +1,7 @@
 ---
 date: 2022-12-07
+tags:
+    - semantic-web
 ---
 
 Basically, there's a difference between what a language is capable (or not) of expressing (*expressibility*), and how easy it is to concisely express (certain) things in a language.
@@ -23,8 +25,6 @@ OWL provides a lot more semantics, so you can express more in it, and hence it h
 
 ### Clojure vs C
 Higher-order functions such as `zip`, `map` and `reduce` allow for greater *expressivity*, not expressibiity. Anything you can express in Clojure, can be expressed in `C` as well, but given its narrower semantics/vocabulary, it takes more effort to express it.
-
-#semantic-web
 
 ### Resources
 * https://stackoverflow.com/questions/15070602/what-are-the-limits-to-expressability-of-rdf-owl-etc

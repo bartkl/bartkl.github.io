@@ -1,5 +1,7 @@
 ---
 date: 2022-08-29
+tags:
+    - programming
 ---
 
 Say you have the following function:
@@ -30,5 +32,3 @@ TODO:
 - Simply improve the writing in general
 - Mention the two edge cases that can make things a little more clear:
 	- If `Cat` remains `Cat` or `Food` remains `Food` it still works, since types are subtypes of themselves. Yet, it really helpes with the require/provide language.
-
-#programming
