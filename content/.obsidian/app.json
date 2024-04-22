@@ -9,5 +9,6 @@
   "useTab": false,
   "vimMode": true,
   "newLinkFormat": "relative",
-  "useMarkdownLinks": false
+  "useMarkdownLinks": false,
+  "alwaysUpdateLinks": true
 }

@@ -1,6 +1,6 @@
 ---
 tags:
-  - type/book-review
+  - review
 date: 2014-12-20
 title: Gelukkig Leven - Seneca
 ---

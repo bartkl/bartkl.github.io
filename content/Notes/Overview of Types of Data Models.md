@@ -1,7 +1,7 @@
 ---
-draft: true
 date: 12-30-2023
 ---
+
 <table>
 	<tr>
 		<th>RFC 3444</th>

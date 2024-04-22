@@ -3,6 +3,7 @@ title: "A Developer's Guide to Semantic Data Modeling - Part 1: Information Mode
 date: 12-30-2023
 draft: true
 ---
+
 ## The Anatomy of a Data Model
 Writing data models involves several aspects.
 ### Semantics

@@ -18,7 +18,7 @@ draft: true
   <tr><th>Users</th><td>Business or IT</td></tr>
 </table>
 
-![[Overview of Types of Data Models]]
+![[../Notes/Overview of Types of Data Models]]
 
 
 

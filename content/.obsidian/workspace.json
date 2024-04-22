@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blogs/The Losing Player Doubles Game - A Mathematical Proof.md",
+                "file": "Terms/Conceptual Data Model.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 528.5,
-    "collapsed": true
+    "width": 528.5
   },
   "right": {
     "id": "a0260a153f1930fb",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blogs/The Losing Player Doubles Game - A Mathematical Proof.md",
+                "file": "Terms/Conceptual Data Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blogs/The Losing Player Doubles Game - A Mathematical Proof.md",
+                "file": "Terms/Conceptual Data Model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blogs/The Losing Player Doubles Game - A Mathematical Proof.md"
+                "file": "Terms/Conceptual Data Model.md"
               }
             }
           },
@@ -160,44 +159,45 @@
   },
   "active": "67fa6e08a334269c",
   "lastOpenFiles": [
+    "Notes/Overview of Types of Data Models.md",
+    "Notes/Analogy between schema validation and human communication.md",
+    "Notes/Expressive power, expressibility and expressivity.md",
+    "Notes/Function subtyping understood through provision and requirement.md",
+    "Notes/Querying Non-Existence Implies CWA.md",
+    "Blogs/A Developer's Guide New Version.md",
+    "Blogs/A Developer's Guide to Semantic Data Modeling - Part 1.md",
+    "Blogs/Data Models As (Domain-Specific) Languages.md",
+    "Blogs/Exceptions and Error Monads.md",
+    "Blogs/index.md",
+    "Blogs/Most Impactful Reading and Listening of 2023.md",
+    "Blogs/The Losing Player Doubles Game - A Mathematical Proof.md",
+    "Books/Gelukkig Leven - Seneca.md",
+    "Semantic Web for the Working Ontologist - James Hendler, Fabien Gandon, Dean Allemang.md",
+    "Attachments/Exceptions and Error Monads.md",
     "Attachments/The Losing Player Doubles Game - A Mathematical Proof 2024-04-22 20.17.35.excalidraw.md",
     "Attachments/The Losing Player Doubles Game - A Mathematical Proof 2024-04-22 20.17.35.excalidraw.light.svg",
     "Attachments/The Losing Player Doubles Game - A Mathematical Proof 2024-04-22 20.17.35.excalidraw.dark.svg",
-    "Blogs/The Losing Player Doubles Game - A Mathematical Proof.md",
-    "Notes/Data Modeling/Overview of Types of Data Models.md",
     "Blogs/The Losing Player Doubles Game - A Mathematical Proof.md~",
     "index.md",
     "Books.md",
     "Notes/index.md",
     "Music.md",
-    "Blogs/index.md",
     "Attachments/Pasted image 20240421190945.png",
     "Books/index.md",
-    "Blogs/Data Models As (Domain-Specific) Languages.md",
     "Blogs/index.md.md",
     "__Blogs.md",
     "___Blogs.md",
     "Presentations.md",
     "Notes.md",
-    "Blogs/Most Impactful Reading and Listening of 2023.md",
-    "Blogs/A Developer's Guide New Version.md",
     "tags",
     "Tags",
-    "Books/2014-12-20  Gelukkig leven - Seneca.md",
-    "Blogs/A Developer's Guide to Semantic Data Modeling - Part 1.md",
-    "Attachments/A Developer's Guide to Semantic Data Modeling - Domain Modeling - 2023-12-30 23.08.11.excalidraw.md",
     "Attachments/Semantic Web for the Working Ontologist (3rd Edition) - Book Cover.png",
-    "Blogs/Test.md",
     "Attachments/Elements of Clojure - Book Cover.png",
-    "Attachments/Test 2024-04-16 10.54.12.excalidraw.md",
     "Attachments/Test 2024-04-16 10.54.12.excalidraw.light.svg",
     "Attachments/Test 2024-04-16 10.54.12.excalidraw.dark.svg",
-    "Attachments/Test 2024-04-16 10.53.31.excalidraw.md",
     "Attachments/Test 2024-04-16 10.53.31.excalidraw.light.svg",
     "Attachments/Test 2024-04-16 10.53.31.excalidraw.dark.svg",
-    "Attachments/A Developer's Guide to Semantic Data Modeling - Opaque Names - 2023-12-30 23.08.11.excalidraw.md",
     "Attachments/A Developer's Guide to Semantic Data Modeling - Opaque Names - 2023-12-30 23.08.11.excalidraw.light.svg",
-    "Attachments/A Developer's Guide New Version 2023-12-31 10.10.14.excalidraw.md",
     "Blogs/A Developer's Guide New Version.md~",
     "Blogs/Test.md~",
     "Presentations/CIM Users Group 2024 - CIM Data Products and Linked Data With LinkML/Attachments",

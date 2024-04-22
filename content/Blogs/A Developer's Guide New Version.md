@@ -3,6 +3,7 @@ title: "A Developer's Guide to Semantic Data Modeling - Part 1: Information Mode
 date: 12-30-2023
 draft: true
 ---
+
 # Who Should Read This
 As a developer or data engineer you are probably regularly faced with the following challenges:
 
