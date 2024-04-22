@@ -14,9 +14,3 @@ The point of this analogy is this:
 The purpose of messaging is getting information across, so given a schema, a sender should try to send as much as he is able to, and a receiver should try to read and interpret as much as he is able to.
 
 This way we enable ourselves to flexibly handle the situation at the last moment, i.e. that context-rich moment where we know the most and really need to take action.
-
-## Related
-- [[Open and Closed Approach in Architecture and Code]]
-- [[Avro schema evolutie en validatie - DABE {PRES1}]]
-- [[Don't Delete Fields from Schemas, Ever]]
-- [[{20220824} Scribbles regarding schema evolution and compatibility]]
