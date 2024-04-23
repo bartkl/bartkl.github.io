@@ -48,7 +48,7 @@ export default ((userOpts?: Partial<Options>) => {
 
             return (
               <li class="recent-li">
-                <Date date={getDate(cfg, page)!} locale={cfg.locale} /> —
+                <span class="recent-li-date"><Date date={getDate(cfg, page)!} locale={cfg.locale} /></span> —
                 <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
                   {title}
                 </a>
