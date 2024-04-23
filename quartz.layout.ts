@@ -50,7 +50,7 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   // afterBody: [
   //   Component.RecentNotes({
-  //     filter: (node) => !["Presentations", "index", "Music", "Blogs", "Notes", "Books"].includes(node.slug),
+  //     filter: (node) => !["Presentations", "index", "Music", "Articles", "Notes", "Books"].includes(node.slug),
   //     limit: 15
   //   }),
   // ],
@@ -62,10 +62,10 @@ export const defaultContentPageLayout: PageLayout = {
       linkToMore: "/Notes/" as SimpleSlug
     }),
     Component.RecentNotes({
-      title: "Blogs",
-      filter: (f) => f.slug!.startsWith("Blogs/") && !f.slug!.endsWith("index"),
+      title: "Articles",
+      filter: (f) => f.slug!.startsWith("Articles/") && !f.slug!.endsWith("index"),
       limit: 3,
-      linkToMore: "/Blogs/" as SimpleSlug
+      linkToMore: "/Articles/" as SimpleSlug
     }),
     Component.RecentNotes({
       title: "Books",
