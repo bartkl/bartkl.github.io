@@ -65,7 +65,7 @@ h6 {
     font-size: 1rem;
   }
   #explorer-ul {
-    a[data-for="Blogs"]::before {
+    a[data-for="Articles"]::before {
       content: "📰 ";
     }
     a[data-for="Presentations"]::before {
