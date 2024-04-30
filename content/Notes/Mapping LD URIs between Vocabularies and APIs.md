@@ -11,11 +11,10 @@ In decentralized architectures with a bottom-up approach to producing data, it c
 
 A great way of keeping track of the meaning of our data is by mapping schema element names onto terms from RDF (often standardized) vocabularies.
 
-For example, if there's a type `Person` in my schema, I might map that onto the `Person` class from the FOAF vocabulary:
+For example, if there's a type `title` in my schema, I might map that onto the `title` term from the DC Terms standard:
 
-```
-Person -> http://xmlns.com/foaf/0.1/Person
-```
+> [!mapping]
+> `title` -> `http://purl.org/dc/elements/1.1/title`
 
 ### JSON-LD
 Although RDF and the Semantic Web are incredible technology, it is also notoriously hard to sell (and learn). Luckily however, certain tools and technologies have made it easier to use.
