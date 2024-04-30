@@ -5,7 +5,7 @@ tags:
     - semantic-web
 ---
 
-### Providing semantics to your data
+## Providing semantics to your data
 
 In decentralized architectures with a bottom-up approach to producing data, it can be challenging to keep track of what our data means.
 
@@ -13,7 +13,6 @@ A great way of keeping track of the meaning of our data is by mapping schema ele
 
 For example, if there's a type `title` in my schema, I might map that onto the `title` term from the DC Terms standard:
 
-> [!mapping]
 > `title` -> `http://purl.org/dc/elements/1.1/title`
 
 ### JSON-LD
