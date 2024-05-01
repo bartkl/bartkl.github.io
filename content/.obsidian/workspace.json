@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "6e7d79569ea8f994",
+        "id": "4df262df76ebb0a9",
         "type": "tabs",
         "children": [
           {
-            "id": "67fa6e08a334269c",
+            "id": "5110075ecbb8a2aa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/JSON-LD for Mapping Semantics onto Data.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/JSON-LD for Mapping Semantics onto Data.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/JSON-LD for Mapping Semantics onto Data.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Notes/JSON-LD for Mapping Semantics onto Data.md"
-              }
+              "state": {}
             }
           },
           {
@@ -157,12 +149,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "67fa6e08a334269c",
+  "active": "5110075ecbb8a2aa",
   "lastOpenFiles": [
-    "Attachments/Mapping LD URIs between Vocabularies and APIs 2024-04-30 18.23.38.excalidraw.md",
     "Notes/JSON-LD for Mapping Semantics onto Data.md",
-    "Attachments/Mapping LD URIs between Vocabularies and APIs 2024-04-30 17.38.44.excalidraw.md",
+    "Attachments/Mapping LD URIs between Vocabularies and APIs 2024-04-30 18.23.38.excalidraw.md",
     "Attachments/Mapping LD URIs between Vocabularies and APIs 2024-04-30 16.38.50.excalidraw.md",
+    "Attachments/Mapping LD URIs between Vocabularies and APIs 2024-04-30 17.38.44.excalidraw.md",
     "Attachments/Mapping LD URIs between Vocabularies and APIs 2024-04-30 18.23.38.excalidraw.light.svg",
     "Attachments/Mapping LD URIs between Vocabularies and APIs 2024-04-30 18.23.38.excalidraw.dark.svg",
     "Attachments/Exceptions and Error Monads.md",
