@@ -3,11 +3,8 @@ title: Home
 socialTitle: bartkl's Website
 ---
 
-> [!info]
-> Under construction.
+Welcome to my homepage!
 
-Welcome to my homepage.
-
-This is the site where I vent my brain, sharing my knowledge and ideas through [[Notes/]] and [[Articles/]], and my enthusiasm about [[Books/]], [[Music/]] and [[Films/]] I've consumed.
+This is where I vent my brain, sharing knowledge and ideas. If you like to get in touch, feel free to send me an e-mail at <span class="blockspam" aria-hidden="true">PLEASE GO AWAY!</span>bartkl@<!-- sdfjsdhfkjypcs -->gmail.com.
 
 ---

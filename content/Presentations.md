@@ -1,6 +1,9 @@
 
 
-## [Building CIM-based Data Products with LinkML: the Linked Data Modeling Language](https://www.bartkl.com/presentations/cimug2024/)
+%% ## [Building CIM-based Data Products with LinkML: the Linked Data Modeling Language](https://www.bartkl.com/presentations/cimug2024/) %%
+
+## Building CIM-based Data Products with LinkML: the Linked Data Modeling Language [CIMug 2024]
+> [!info] Work in progress.
 
 > [!abstract]-
 > Alliander has been working on implementing a decentralized Data Mesh
