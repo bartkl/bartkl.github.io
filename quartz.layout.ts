@@ -73,12 +73,12 @@ export const defaultContentPageLayout: PageLayout = {
       limit: 3,
       linkToMore: "/Books/" as SimpleSlug
     }),
-    Component.RecentNotes({
-      title: "Music",
-      filter: (f) => f.slug!.startsWith("Music/") && !f.slug!.endsWith("index"),
-      limit: 3,
-      linkToMore: "/Music/" as SimpleSlug
-    }),
+    // Component.RecentNotes({
+    //   title: "Music",
+    //   filter: (f) => f.slug!.startsWith("Music/") && !f.slug!.endsWith("index"),
+    //   limit: 3,
+    //   linkToMore: "/Music/" as SimpleSlug
+    // }),
   ],
   left: [
     Component.PageTitle(),
