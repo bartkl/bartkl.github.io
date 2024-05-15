@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4df262df76ebb0a9",
+        "id": "0a96364228ab4a9d",
         "type": "tabs",
         "children": [
           {
-            "id": "5110075ecbb8a2aa",
+            "id": "bc4772f24503643e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -149,8 +149,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5110075ecbb8a2aa",
+  "active": "bc4772f24503643e",
   "lastOpenFiles": [
+    "Notes/Analogy between schema validation and human communication.md",
     "Notes/JSON-LD for Mapping Semantics onto Data.md",
     "Attachments/Mapping LD URIs between Vocabularies and APIs 2024-04-30 18.23.38.excalidraw.md",
     "Attachments/Mapping LD URIs between Vocabularies and APIs 2024-04-30 16.38.50.excalidraw.md",
@@ -158,7 +159,6 @@
     "Attachments/Mapping LD URIs between Vocabularies and APIs 2024-04-30 18.23.38.excalidraw.light.svg",
     "Attachments/Mapping LD URIs between Vocabularies and APIs 2024-04-30 18.23.38.excalidraw.dark.svg",
     "Attachments/Exceptions and Error Monads.md",
-    "Notes/Analogy between schema validation and human communication.md",
     "Attachments/Mapping LD URIs between Vocabularies and APIs 2024-04-30 17.38.44.excalidraw.light.svg",
     "Attachments/Mapping LD URIs between Vocabularies and APIs 2024-04-30 17.38.44.excalidraw.dark.svg",
     "Attachments/Mapping LD URIs between Vocabularies and APIs 2024-04-30 17.38.29.excalidraw.dark.svg",
