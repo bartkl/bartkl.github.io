@@ -1,6 +1,11 @@
+## 20-06-2024 &mdash; [Standardized Developer-Friendly Data Modeling with LinkML](https://www.bartkl.com/presentations/linkml240620)
 
+> [!abstract]-
+> In this small presentation I share with the LinkML Community how LinkML is currently
+> being used to model data products at Alliander, and especially at Netbeheer Nederland,
+> a national collaborative effort between Dutch grid operators.
 
-## [Building CIM-based Data Products with LinkML: the Linked Data Modeling Language](https://www.bartkl.com/presentations/cimug2024/)
+## 16-05-2024 &mdash; [Building CIM-based Data Products with LinkML: the Linked Data Modeling Language](https://www.bartkl.com/presentations/cimug2024)
 
 > [!abstract]-
 > Alliander has been working on implementing a decentralized Data Mesh
@@ -40,3 +45,10 @@ extended easily.
 >
 > Will LinkML be our pragmatic savior?
 
+## 15-03-2024 &mdash; [Entity and Relation Extraction using OntoGPT and SPIRES](https://www.bartkl.com/presentations/ontogpt240315)
+
+> [!abstract]-
+> At the Alliander Research Center for Digital Technologies I did a proof of concept
+> with [OntoGPT](https://monarch-initiative.github.io/ontogpt), a library which helps
+> with extracting entities and relations from unstructured text using a LLM and
+> predefined schema.
