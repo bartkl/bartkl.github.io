@@ -5,6 +5,12 @@ elements with sources ending with `.excalidraw` are replaced with ones
 that point to the corresponding image depending on the light or dark mode
 setting.
 
+You need to enable this feature in Obsidian Excalidraw plugin settings:
+Embeding Excalidraw into your Notes and Exporting ->
+Export Settings ->
+Auto-export Settings ->
+Enable "Export dark- and light-themed images".
+
 Similarly, Excalidraw images are redrawn whenever the user toggles between
 light and dark mode using the component provided by Quartz.
 */
