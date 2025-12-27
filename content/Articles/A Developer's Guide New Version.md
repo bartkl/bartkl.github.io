@@ -1,7 +1,7 @@
 ---
 title: "A Developer's Guide to Semantic Data Modeling - Part 1: Information Models"
 date: 12-30-2023
-draft: false
+draft: true
 ---
 
 # Who Should Read This

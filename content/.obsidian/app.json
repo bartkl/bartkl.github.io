@@ -1,0 +1,15 @@
+{
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Drafts",
+  "attachmentFolderPath": "Attachments",
+  "propertiesInDocument": "source",
+  "spellcheck": false,
+  "autoPairMarkdown": false,
+  "autoPairBrackets": false,
+  "useTab": false,
+  "vimMode": true,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": true,
+  "promptDelete": false
+}

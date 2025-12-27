@@ -7,8 +7,11 @@ export const sharedPageComponents: SharedLayout = {
   header: [Component.RenderExcalidraw()],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      "LinkedIn": "https://nl.linkedin.com/in/bart-kleijngeld-3a387b146",
+      "GitHub": "https://github.com/bartkl",
+      "Goodreads": "https://www.goodreads.com/user/show/25204851-bart-kleijngeld",
+      "MUBI": "https://mubi.com/en/users/6341306",
+      // "Last.fm": "https://www.last.fm/user/bartkl",  // TODO: Fix such that no weird wrapping occurs on mobile.
     },
   }),
 }
@@ -16,7 +19,7 @@ export const sharedPageComponents: SharedLayout = {
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
-    Component.Breadcrumbs(),
+    // Component.Breadcrumbs(),
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
@@ -26,12 +29,14 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.Backlinks(),
+    Component.DesktopOnly(Component.Graph()),
   ],
   right: [
-    Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
+  ],
+  afterBody: [
+    Component.MobileOnly(Component.Graph()),
   ],
 }
 
@@ -43,7 +48,6 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
   ],
   right: [],
 }

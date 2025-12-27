@@ -3,6 +3,7 @@ tags:
   - information-modeling
   - cim
 date: 2024-07-05
+draft: true
 ---
 
 > [!abstract]
